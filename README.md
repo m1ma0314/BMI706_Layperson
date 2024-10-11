@@ -3,10 +3,11 @@
 
 Hi! Welcome to our GitHub page for `Alzheimer Visualier`. 
 
-Here you can find our streamlit app 👉: [LINT TO BE ADDED]
+Here you can find our streamlit app 👉: [LINK TO BE ADDED]
 
 
+`<br>`
 By HSPH CBQG students:
-Angel Chen
-Mijia Ma
-Siyao Zhu
+- Angel Chen
+- Mijia Ma
+- Siyao Zhu
