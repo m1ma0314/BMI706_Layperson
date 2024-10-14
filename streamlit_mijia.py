@@ -10,7 +10,7 @@ states = alt.topo_feature(data.us_10m.url, feature='states')
 
 max_percentage_df = pd.read_csv('max_percentage_df.csv')
 
-selector = alt.selection_point(fields=['StateID'], name='Select')
+selector = alt.selection_point(fields=['id'], name='Select')
 
 background = alt.Chart(states).mark_geoshape(
     fill='lightgray',
@@ -21,15 +21,16 @@ background = alt.Chart(states).mark_geoshape(
 )
 
 prevalence_scale = alt.Scale(domain=[df_prevalence['Percent'].min(), df_prevalence['Percent'].max()], scheme='oranges')
+prevalence_color = alt.Color(field="Percent", type="quantitative", scale=prevalence_scale, title="Alzheimer's Prevalence (%)")
 
 prevalence_map = alt.Chart(states).mark_geoshape().encode(
-    color=alt.Color('Percent:Q', scale=prevalence_scale, title="Alzheimer's Prevalence (%)"),
-    tooltip=[alt.Tooltip('State:N', title='State'),
+    color=prevalence_color,
+    tooltip=[alt.Tooltip('state:N', title='State'),
              alt.Tooltip('Percent:Q', title='Prevalence (%)')]
              
 ).transform_lookup(
     lookup='id',
-    from_=alt.LookupData(df_prevalence, 'StateID', ['State', 'Percent'])
+    from_=alt.LookupData(df_prevalence, 'id', ['state', 'Percent'])
 ).add_params(
     selector
 ).transform_filter(
@@ -41,29 +42,53 @@ prevalence_map = alt.Chart(states).mark_geoshape().encode(
 )
 
 # Cognitive Decline Map (showing the max percentage for each state)
-cognitive_scale = alt.Scale(domain=[max_percentage_df['Data_Value'].min(), max_percentage_df['Data_Value'].max()], scheme='blues')
+
+max_percentage_df_filtered = max_percentage_df[max_percentage_df['Data_Value'].notnull()]
+
+topic_color = alt.Color(
+    'Topic:N',
+    scale=alt.Scale(scheme='set3'), 
+    title='Topic',
+    legend=alt.Legend(),  
+)
 
 cognitive_map = alt.Chart(states).mark_geoshape().encode(
-    #color=alt.Color('Data_Value:Q', scale=cognitive_scale, title='Max Cognitive Decline (%)'),
-    color=alt.Color('Question:N', scale=alt.Scale(scheme='category10'), title='Question'),
-    tooltip=[alt.Tooltip('LocationDesc:N', title='State'),
-             alt.Tooltip('Data_Value:Q', title='Max Decline (%)'),
-             alt.Tooltip('Question:N', title='Question')]
+    color=alt.condition(
+        alt.datum.Topic != None,  
+        topic_color,  
+        alt.value('lightgray')  
+    ),
+    tooltip=[alt.Tooltip('state:N', title='State'),
+             alt.Tooltip('Data_Value:Q', title='Cognitive Decline Issue with most % reported'),
+             alt.Tooltip('Topic:N', title='Topic')]
 ).transform_lookup(
     lookup='id',
-    from_=alt.LookupData(max_percentage_df, 'StateID', ['LocationDesc', 'Data_Value', 'Question'])
+    from_=alt.LookupData(max_percentage_df_filtered, 'id', ['state', 'Data_Value', 'Topic'])
 ).add_params(
-    selector
-).transform_filter(
-    selector
+    selector 
 ).project('albersUsa').properties(
     width=500,
     height=300,
     title="Max Cognitive Decline Across U.S. States in 2022"
 )
 
-# Combine both maps vertically
-final_chart = alt.vconcat(background+prevalence_map, background+cognitive_map).resolve_scale(
+# Add an outline for the selected state without changing the color
+selected_outline = alt.Chart(states).mark_geoshape(
+    fill=None,  
+    stroke='black',  
+    strokeWidth=3
+).transform_filter(
+    selector  
+).project('albersUsa').properties(
+    width=500,
+    height=300
+)
+
+# Combine both maps with their respective outlines
+final_chart = alt.vconcat(
+    background + prevalence_map + selected_outline,  
+    background + cognitive_map + selected_outline 
+).resolve_scale(
     color='independent'
 )
 
