@@ -166,11 +166,53 @@ gender_grouped_chart = alt.Chart(mean_gender_values).mark_bar().encode(
 
 st.altair_chart(gender_grouped_chart, use_container_width=True)
 
-from vega_datasets import data
+# from vega_datasets import data
+
+# us_states = alt.topo_feature(data.us_10m.url, 'states')
+
+# #mean_location_values = df.groupby(['LocationDesc', 'Question_Simple'])['Data_Value'].mean().reset_index()
+# mean_location_values = df.groupby(['state', 'Question_Simple'])['Data_Value'].mean().reset_index()
+
+
+# state_id_map = {
+#     'Alabama': 1, 'Alaska': 2, 'Arizona': 4, 'Arkansas': 5, 'California': 6, 'Colorado': 8,
+#     'Connecticut': 9, 'Delaware': 10, 'Florida': 12, 'Georgia': 13, 'Hawaii': 15, 'Idaho': 16,
+#     'Illinois': 17, 'Indiana': 18, 'Iowa': 19, 'Kansas': 20, 'Kentucky': 21, 'Louisiana': 22,
+#     'Maine': 23, 'Maryland': 24, 'Massachusetts': 25, 'Michigan': 26, 'Minnesota': 27,
+#     'Mississippi': 28, 'Missouri': 29, 'Montana': 30, 'Nebraska': 31, 'Nevada': 32,
+#     'New Hampshire': 33, 'New Jersey': 34, 'New Mexico': 35, 'New York': 36, 'North Carolina': 37,
+#     'North Dakota': 38, 'Ohio': 39, 'Oklahoma': 40, 'Oregon': 41, 'Pennsylvania': 42,
+#     'Rhode Island': 44, 'South Carolina': 45, 'South Dakota': 46, 'Tennessee': 47, 'Texas': 48,
+#     'Utah': 49, 'Vermont': 50, 'Virginia': 51, 'Washington': 53, 'West Virginia': 54,
+#     'Wisconsin': 55, 'Wyoming': 56
+# }
+
+# mean_location_values['state_id'] = mean_location_values['state'].map(state_id_map)
+
+# base = alt.Chart(us_states).mark_geoshape(
+#     fill='lightgray',
+#     stroke='white'
+# ).project(
+#     type='albersUsa'
+# ).properties(
+#     width=800,
+#     height=500
+# )
+
+# heatmap = alt.Chart(us_states).mark_geoshape().encode(
+#     color=alt.Color('Data_Value:Q', title='Proportion (%)', scale=alt.Scale(scheme='blues')),
+#     tooltip=['state:N', 'Question_Simple:N', 'Data_Value:Q']
+# ).transform_lookup(
+#     lookup='id',
+#     from_=alt.LookupData(mean_location_values, 'state_id', ['state', 'Data_Value', 'Question_Simple'])
+# )
+
+# map_chart = base + heatmap
+# st.altair_chart(map_chart, use_container_width=True)
 
 us_states = alt.topo_feature(data.us_10m.url, 'states')
 
-mean_location_values = df.groupby(['LocationDesc', 'Question_Simple'])['Data_Value'].mean().reset_index()
+mean_location_values = df.groupby(['state', 'Question_Simple'])['Data_Value'].mean().reset_index()
 
 state_id_map = {
     'Alabama': 1, 'Alaska': 2, 'Arizona': 4, 'Arkansas': 5, 'California': 6, 'Colorado': 8,
@@ -185,47 +227,7 @@ state_id_map = {
     'Wisconsin': 55, 'Wyoming': 56
 }
 
-mean_location_values['state_id'] = mean_location_values['LocationDesc'].map(state_id_map)
-
-base = alt.Chart(us_states).mark_geoshape(
-    fill='lightgray',
-    stroke='white'
-).project(
-    type='albersUsa'
-).properties(
-    width=800,
-    height=500
-)
-
-heatmap = alt.Chart(us_states).mark_geoshape().encode(
-    color=alt.Color('Data_Value:Q', title='Proportion (%)', scale=alt.Scale(scheme='blues')),
-    tooltip=['LocationDesc:N', 'Question_Simple:N', 'Data_Value:Q']
-).transform_lookup(
-    lookup='id',
-    from_=alt.LookupData(mean_location_values, 'state_id', ['LocationDesc', 'Data_Value', 'Question_Simple'])
-)
-
-map_chart = base + heatmap
-st.altair_chart(map_chart, use_container_width=True)
-
-us_states = alt.topo_feature(data.us_10m.url, 'states')
-
-mean_location_values = df.groupby(['LocationDesc', 'Question_Simple'])['Data_Value'].mean().reset_index()
-
-state_id_map = {
-    'Alabama': 1, 'Alaska': 2, 'Arizona': 4, 'Arkansas': 5, 'California': 6, 'Colorado': 8,
-    'Connecticut': 9, 'Delaware': 10, 'Florida': 12, 'Georgia': 13, 'Hawaii': 15, 'Idaho': 16,
-    'Illinois': 17, 'Indiana': 18, 'Iowa': 19, 'Kansas': 20, 'Kentucky': 21, 'Louisiana': 22,
-    'Maine': 23, 'Maryland': 24, 'Massachusetts': 25, 'Michigan': 26, 'Minnesota': 27,
-    'Mississippi': 28, 'Missouri': 29, 'Montana': 30, 'Nebraska': 31, 'Nevada': 32,
-    'New Hampshire': 33, 'New Jersey': 34, 'New Mexico': 35, 'New York': 36, 'North Carolina': 37,
-    'North Dakota': 38, 'Ohio': 39, 'Oklahoma': 40, 'Oregon': 41, 'Pennsylvania': 42,
-    'Rhode Island': 44, 'South Carolina': 45, 'South Dakota': 46, 'Tennessee': 47, 'Texas': 48,
-    'Utah': 49, 'Vermont': 50, 'Virginia': 51, 'Washington': 53, 'West Virginia': 54,
-    'Wisconsin': 55, 'Wyoming': 56
-}
-
-mean_location_values['state_id'] = mean_location_values['LocationDesc'].map(state_id_map)
+mean_location_values['state_id'] = mean_location_values['state'].map(state_id_map)
 
 questions = mean_location_values['Question_Simple'].unique()
 
@@ -242,13 +244,13 @@ base = alt.Chart(us_states).mark_geoshape(
 def create_heatmap(question):
     heatmap = alt.Chart(us_states).mark_geoshape().encode(
         color=alt.Color('Data_Value:Q', title=f'Proportion (%)', scale=alt.Scale(scheme='blues')),
-        tooltip=[alt.Tooltip('LocationDesc:N', title='State'),
+        tooltip=[alt.Tooltip('state:N', title='State'),
                  alt.Tooltip('Question_Simple:N', title='Question'),
                  alt.Tooltip('Data_Value:Q', title='Proportion (%)', format='.1f')]
     ).transform_lookup(
         lookup='id',
         from_=alt.LookupData(mean_location_values[mean_location_values['Question_Simple'] == question],
-                             'state_id', ['LocationDesc', 'Data_Value', 'Question_Simple'])
+                             'state_id', ['state', 'Data_Value', 'Question_Simple'])
     ).properties(
         title=question
     )
@@ -259,9 +261,9 @@ chart2 = create_heatmap(questions[1])
 chart3 = create_heatmap(questions[2])
 chart4 = create_heatmap(questions[3])
 
-final_chart2 = (chart1 | chart2) & (chart3 | chart4)
+final_chart_zsy = (chart1 | chart2) & (chart3 | chart4)
 
-st.altair_chart(final_chart2, use_container_width=True)
+st.altair_chart(final_chart_zsy, use_container_width=True)
 
 ### Task 3 Angel
 # Disable the row limit for large datasets
