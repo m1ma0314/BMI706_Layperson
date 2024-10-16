@@ -126,9 +126,9 @@ def show_compare_states_page():
 
         # Bar chart for Race data comparison for State 1
         bar_chart_race_1 = alt.Chart(race_data_state_1).mark_bar().encode(
-        y=alt.Y('Class', axis=alt.Axis(labelAngle=90),title='Topics'),
-        yOffset='Stratification2',
-        x=alt.X('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
+        x=alt.X('Class', axis=alt.Axis(labelAngle=90),title='Topics'),
+        xOffset='Stratification2',
+        y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
         color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
         tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
@@ -139,9 +139,9 @@ def show_compare_states_page():
 
         # Bar chart for Race data comparison for State 2
         bar_chart_race_2 = alt.Chart(race_data_state_2).mark_bar().encode(
-        y=alt.Y('Class', axis=alt.Axis(labelAngle=90),title='Topics'),
-        yOffset='Stratification2',
-        x=alt.X('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
+        x=alt.X('Class', axis=alt.Axis(labelAngle=90),title='Topics'),
+        xOffset='Stratification2',
+        y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
         color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
         tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
