@@ -83,7 +83,7 @@ def show_compare_states_page():
             color='Class:N',
             tooltip=['Class', 'Data_Value']
         ).properties(
-            width=300,
+            width=400,
             height=300,
             title=f'Average % by Topic for {state_1}'
         )
@@ -95,7 +95,7 @@ def show_compare_states_page():
             color='Class:N',
             tooltip=['Class', 'Data_Value']
         ).properties(
-            width=300,
+            width=400,
             height=300,
             title=f'Average % by Topic for {state_2}'
         )
@@ -110,6 +110,8 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
+            width=400, 
+            height=300,
             title=f'Average % by Topic and Sex for {state_1}'
         )
 
@@ -123,6 +125,8 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
+            width=400, 
+            height=300,
             title=f'Average % by Topic and Sex for {state_2}'
         )
 
@@ -136,6 +140,8 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
+            width=400, 
+            height=300,
             title=f'Average % by Topic and Race for {state_1}'
         )
 
@@ -149,6 +155,8 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
+            width=400, 
+            height=300,
             title=f'Average % by Topic and Race for {state_2}'
         )
 
