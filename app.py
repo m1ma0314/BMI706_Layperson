@@ -69,8 +69,8 @@ st.markdown(
 with st.sidebar:
     selected = option_menu(
         "Main Menu", 
-        ["Overall", "Compare Topics", "Compare States"],
-        icons=['people-fill', 'capsule', 'bar-chart'],
+        ["Overall", "Compare Topics", "Compare States","About"],
+        icons=['people-fill', 'capsule', 'bar-chart', 'emoji-sunglasses'],
         menu_icon="cast", default_index=0,
         styles={
             "icon": {"color": "orange", "font-size": "25px"}, 
