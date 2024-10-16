@@ -170,3 +170,5 @@ def show_compare_states_page():
 
     # Call the function to create plots
     create_plots()
+
+#show_compare_states_page()
