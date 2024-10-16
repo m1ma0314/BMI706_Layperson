@@ -35,7 +35,7 @@ def show_overall_page():
     #)
 
     prevalence_scale = alt.Scale(domain=[df_prevalence['Percent'].min(), df_prevalence['Percent'].max()], scheme='oranges')
-    prevalence_color = alt.Color(field="Percent", type="quantitative", scale=prevalence_scale, title="Alzheimer's Prevalence (%)")
+    prevalence_color = alt.Color(field="Percent", type="quantitative", scale=prevalence_scale, title="Prevalence (%)")
 
     prevalence_map = alt.Chart(states).mark_geoshape().encode(
         color=prevalence_color,
