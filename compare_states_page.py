@@ -2,8 +2,6 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title='Compare Factors associated with Alzheimer Elders between States', 
-                       layout='wide')
 
 def show_compare_states_page():
                        
