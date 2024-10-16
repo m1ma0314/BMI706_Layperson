@@ -69,6 +69,8 @@ def show_overall_page():
                 alt.Tooltip('Count:Q', title="Number of People")]
     ).add_params(
         selector
+    ).transform_filter(
+        selector
     ).properties(
         title="Top 10 States by Number of People"
     )
