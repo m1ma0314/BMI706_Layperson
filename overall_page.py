@@ -69,8 +69,6 @@ def show_overall_page():
                 alt.Tooltip('Count:Q', title="Number of People")]
     ).add_params(
         selector
-    ).transform_filter(
-        selector
     ).properties(
         title="Top 10 States by Number of People"
     )
@@ -135,11 +133,23 @@ def show_overall_page():
         title="State-Level Engagement in Selected Topic"
     )
 
-    with col1:
-        st.altair_chart(ranking_chart, use_container_width=True)
+    #with col1:
+    #    st.altair_chart(ranking_chart, use_container_width=True)
 
-    with col2:
-        st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
+    #with col2:
+    #    st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
+
+    st.altair_chart(
+    alt.hconcat(
+        ranking_chart.properties(width=150),  # Set ranking_chart width
+        (background + prevalence_map + selected_outline).properties(width=500)  # Set map width
+    ).resolve_scale(
+        color='independent'
+    ),
+    use_container_width=True
+    )
 
     # Combine the two charts into a linked view
     st.altair_chart(alt.vconcat(grouped_bar, state_bar), use_container_width=True)
+
+
