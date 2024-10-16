@@ -1,0 +1,451 @@
+LocationDesc,Class,Stratification2,Data_Value,state,id,abbr
+Alabama,Caregiving,Female,37.66,Alabama,1.0,AL
+Alabama,Caregiving,Male,35.03333333333333,Alabama,1.0,AL
+Alabama,Cognitive Decline,Female,36.275,Alabama,1.0,AL
+Alabama,Cognitive Decline,Male,34.891666666666666,Alabama,1.0,AL
+Alabama,Mental Health,Female,21.733333333333334,Alabama,1.0,AL
+Alabama,Mental Health,Male,14.566666666666668,Alabama,1.0,AL
+Alabama,Smoking and Alcohol Use,Female,8.333333333333334,Alabama,1.0,AL
+Alabama,Smoking and Alcohol Use,Male,13.200000000000001,Alabama,1.0,AL
+Alaska,Caregiving,Female,35.620000000000005,Alaska,2.0,AK
+Alaska,Caregiving,Male,31.346666666666668,Alaska,2.0,AK
+Alaska,Cognitive Decline,Female,30.688888888888886,Alaska,2.0,AK
+Alaska,Cognitive Decline,Male,16.700000000000003,Alaska,2.0,AK
+Alaska,Mental Health,Female,16.866666666666664,Alaska,2.0,AK
+Alaska,Mental Health,Male,8.4,Alaska,2.0,AK
+Alaska,Smoking and Alcohol Use,Female,11.166666666666666,Alaska,2.0,AK
+Alaska,Smoking and Alcohol Use,Male,14.549999999999999,Alaska,2.0,AK
+Arizona,Caregiving,Female,36.96,Arizona,4.0,AZ
+Arizona,Caregiving,Male,33.14,Arizona,4.0,AZ
+Arizona,Cognitive Decline,Female,31.383333333333336,Arizona,4.0,AZ
+Arizona,Cognitive Decline,Male,21.10909090909091,Arizona,4.0,AZ
+Arizona,Mental Health,Female,18.45,Arizona,4.0,AZ
+Arizona,Mental Health,Male,11.266666666666666,Arizona,4.0,AZ
+Arizona,Smoking and Alcohol Use,Female,8.85,Arizona,4.0,AZ
+Arizona,Smoking and Alcohol Use,Male,12.5,Arizona,4.0,AZ
+Arkansas,Caregiving,Female,36.1,Arkansas,5.0,AR
+Arkansas,Caregiving,Male,33.559999999999995,Arkansas,5.0,AR
+Arkansas,Cognitive Decline,Female,38.041666666666664,Arkansas,5.0,AR
+Arkansas,Cognitive Decline,Male,27.666666666666668,Arkansas,5.0,AR
+Arkansas,Mental Health,Female,21.766666666666666,Arkansas,5.0,AR
+Arkansas,Mental Health,Male,14.450000000000001,Arkansas,5.0,AR
+Arkansas,Smoking and Alcohol Use,Female,10.200000000000001,Arkansas,5.0,AR
+Arkansas,Smoking and Alcohol Use,Male,14.683333333333332,Arkansas,5.0,AR
+California,Caregiving,Female,34.4,California,6.0,CA
+California,Caregiving,Male,35.371428571428574,California,6.0,CA
+California,Cognitive Decline,Female,32.15833333333333,California,6.0,CA
+California,Cognitive Decline,Male,24.299999999999997,California,6.0,CA
+California,Mental Health,Female,16.833333333333332,California,6.0,CA
+California,Mental Health,Male,10.6,California,6.0,CA
+California,Smoking and Alcohol Use,Female,7.8999999999999995,California,6.0,CA
+California,Smoking and Alcohol Use,Male,12.049999999999999,California,6.0,CA
+Colorado,Caregiving,Female,34.983333333333334,Colorado,8.0,CO
+Colorado,Caregiving,Male,31.916666666666668,Colorado,8.0,CO
+Colorado,Cognitive Decline,Female,29.108333333333334,Colorado,8.0,CO
+Colorado,Cognitive Decline,Male,29.933333333333334,Colorado,8.0,CO
+Colorado,Mental Health,Female,16.666666666666668,Colorado,8.0,CO
+Colorado,Mental Health,Male,10.4,Colorado,8.0,CO
+Colorado,Smoking and Alcohol Use,Female,7.683333333333334,Colorado,8.0,CO
+Colorado,Smoking and Alcohol Use,Male,11.783333333333333,Colorado,8.0,CO
+Connecticut,Caregiving,Female,38.086666666666666,Connecticut,9.0,CT
+Connecticut,Caregiving,Male,32.64,Connecticut,9.0,CT
+Connecticut,Cognitive Decline,Female,33.31,Connecticut,9.0,CT
+Connecticut,Cognitive Decline,Male,25.0375,Connecticut,9.0,CT
+Connecticut,Mental Health,Female,15.683333333333332,Connecticut,9.0,CT
+Connecticut,Mental Health,Male,10.916666666666666,Connecticut,9.0,CT
+Connecticut,Smoking and Alcohol Use,Female,8.883333333333335,Connecticut,9.0,CT
+Connecticut,Smoking and Alcohol Use,Male,11.35,Connecticut,9.0,CT
+Delaware,Caregiving,Female,36.126666666666665,Delaware,10.0,DE
+Delaware,Caregiving,Male,27.959999999999997,Delaware,10.0,DE
+Delaware,Cognitive Decline,Female,26.571428571428573,Delaware,10.0,DE
+Delaware,Cognitive Decline,Male,19.616666666666667,Delaware,10.0,DE
+Delaware,Mental Health,Female,16.583333333333332,Delaware,10.0,DE
+Delaware,Mental Health,Male,9.5,Delaware,10.0,DE
+Delaware,Smoking and Alcohol Use,Female,9.233333333333333,Delaware,10.0,DE
+Delaware,Smoking and Alcohol Use,Male,11.6,Delaware,10.0,DE
+District of Columbia,Cognitive Decline,Female,29.522222222222222,District of Columbia,11.0,DC
+District of Columbia,Cognitive Decline,Male,25.414285714285715,District of Columbia,11.0,DC
+District of Columbia,Mental Health,Female,16.283333333333335,District of Columbia,11.0,DC
+District of Columbia,Mental Health,Male,9.516666666666667,District of Columbia,11.0,DC
+District of Columbia,Smoking and Alcohol Use,Female,9.700000000000001,District of Columbia,11.0,DC
+District of Columbia,Smoking and Alcohol Use,Male,12.100000000000001,District of Columbia,11.0,DC
+Florida,Cognitive Decline,Female,35.875,Florida,12.0,FL
+Florida,Cognitive Decline,Male,31.825,Florida,12.0,FL
+Florida,Mental Health,Female,17.03333333333333,Florida,12.0,FL
+Florida,Mental Health,Male,11.366666666666667,Florida,12.0,FL
+Florida,Smoking and Alcohol Use,Female,8.933333333333334,Florida,12.0,FL
+Florida,Smoking and Alcohol Use,Male,11.983333333333334,Florida,12.0,FL
+Georgia,Caregiving,Female,36.690000000000005,Georgia,13.0,GA
+Georgia,Caregiving,Male,33.85,Georgia,13.0,GA
+Georgia,Cognitive Decline,Female,33.05833333333333,Georgia,13.0,GA
+Georgia,Cognitive Decline,Male,32.0,Georgia,13.0,GA
+Georgia,Mental Health,Female,18.8,Georgia,13.0,GA
+Georgia,Mental Health,Male,10.533333333333333,Georgia,13.0,GA
+Georgia,Smoking and Alcohol Use,Female,8.583333333333334,Georgia,13.0,GA
+Georgia,Smoking and Alcohol Use,Male,11.85,Georgia,13.0,GA
+Guam,Mental Health,Female,8.4,Guam,66.0,GU
+Guam,Mental Health,Male,9.0,Guam,66.0,GU
+Guam,Smoking and Alcohol Use,Female,13.3,Guam,66.0,GU
+Guam,Smoking and Alcohol Use,Male,29.549999999999997,Guam,66.0,GU
+Hawaii,Caregiving,Female,35.66,Hawaii,15.0,HI
+Hawaii,Caregiving,Male,33.846666666666664,Hawaii,15.0,HI
+Hawaii,Cognitive Decline,Female,27.458333333333332,Hawaii,15.0,HI
+Hawaii,Cognitive Decline,Male,26.583333333333332,Hawaii,15.0,HI
+Hawaii,Mental Health,Female,10.9,Hawaii,15.0,HI
+Hawaii,Mental Health,Male,7.783333333333334,Hawaii,15.0,HI
+Hawaii,Smoking and Alcohol Use,Female,7.483333333333333,Hawaii,15.0,HI
+Hawaii,Smoking and Alcohol Use,Male,12.416666666666666,Hawaii,15.0,HI
+Idaho,Caregiving,Female,35.14,Idaho,16.0,ID
+Idaho,Caregiving,Male,31.1,Idaho,16.0,ID
+Idaho,Cognitive Decline,Female,31.183333333333334,Idaho,16.0,ID
+Idaho,Cognitive Decline,Male,25.208333333333332,Idaho,16.0,ID
+Idaho,Mental Health,Female,17.7,Idaho,16.0,ID
+Idaho,Mental Health,Male,9.783333333333333,Idaho,16.0,ID
+Idaho,Smoking and Alcohol Use,Female,8.549999999999999,Idaho,16.0,ID
+Idaho,Smoking and Alcohol Use,Male,12.066666666666668,Idaho,16.0,ID
+Illinois,Caregiving,Female,35.57333333333334,Illinois,17.0,IL
+Illinois,Caregiving,Male,31.973333333333336,Illinois,17.0,IL
+Illinois,Cognitive Decline,Female,31.2,Illinois,17.0,IL
+Illinois,Cognitive Decline,Male,7.0,Illinois,17.0,IL
+Illinois,Mental Health,Female,15.266666666666666,Illinois,17.0,IL
+Illinois,Mental Health,Male,10.166666666666666,Illinois,17.0,IL
+Illinois,Smoking and Alcohol Use,Female,8.950000000000001,Illinois,17.0,IL
+Illinois,Smoking and Alcohol Use,Male,12.816666666666668,Illinois,17.0,IL
+Indiana,Caregiving,Female,33.86666666666667,Indiana,18.0,IN
+Indiana,Caregiving,Male,33.1,Indiana,18.0,IN
+Indiana,Cognitive Decline,Female,35.18333333333333,Indiana,18.0,IN
+Indiana,Cognitive Decline,Male,27.775000000000002,Indiana,18.0,IN
+Indiana,Mental Health,Female,19.5,Indiana,18.0,IN
+Indiana,Mental Health,Male,10.9,Indiana,18.0,IN
+Indiana,Smoking and Alcohol Use,Female,10.633333333333333,Indiana,18.0,IN
+Indiana,Smoking and Alcohol Use,Male,14.75,Indiana,18.0,IN
+Iowa,Caregiving,Female,33.12,Iowa,19.0,IA
+Iowa,Caregiving,Male,28.553333333333335,Iowa,19.0,IA
+Iowa,Cognitive Decline,Female,32.65,Iowa,19.0,IA
+Iowa,Cognitive Decline,Male,21.7,Iowa,19.0,IA
+Iowa,Mental Health,Female,16.45,Iowa,19.0,IA
+Iowa,Mental Health,Male,7.016666666666667,Iowa,19.0,IA
+Iowa,Smoking and Alcohol Use,Female,10.316666666666668,Iowa,19.0,IA
+Iowa,Smoking and Alcohol Use,Male,17.016666666666666,Iowa,19.0,IA
+Kansas,Caregiving,Female,35.04,Kansas,20.0,KS
+Kansas,Caregiving,Male,29.466666666666665,Kansas,20.0,KS
+Kansas,Cognitive Decline,Female,34.19166666666667,Kansas,20.0,KS
+Kansas,Cognitive Decline,Male,23.724999999999998,Kansas,20.0,KS
+Kansas,Mental Health,Female,15.166666666666666,Kansas,20.0,KS
+Kansas,Mental Health,Male,8.700000000000001,Kansas,20.0,KS
+Kansas,Smoking and Alcohol Use,Female,9.583333333333334,Kansas,20.0,KS
+Kansas,Smoking and Alcohol Use,Male,13.85,Kansas,20.0,KS
+Kentucky,Caregiving,Female,36.71333333333334,Kentucky,21.0,KY
+Kentucky,Caregiving,Male,33.92666666666667,Kentucky,21.0,KY
+Kentucky,Cognitive Decline,Female,37.38333333333333,Kentucky,21.0,KY
+Kentucky,Cognitive Decline,Male,27.889999999999997,Kentucky,21.0,KY
+Kentucky,Mental Health,Female,21.283333333333335,Kentucky,21.0,KY
+Kentucky,Mental Health,Male,13.933333333333332,Kentucky,21.0,KY
+Kentucky,Smoking and Alcohol Use,Female,12.58,Kentucky,21.0,KY
+Kentucky,Smoking and Alcohol Use,Male,15.433333333333332,Kentucky,21.0,KY
+Louisiana,Caregiving,Female,36.123333333333335,Louisiana,22.0,LA
+Louisiana,Caregiving,Male,32.82666666666667,Louisiana,22.0,LA
+Louisiana,Cognitive Decline,Female,41.325,Louisiana,22.0,LA
+Louisiana,Cognitive Decline,Male,34.1,Louisiana,22.0,LA
+Louisiana,Mental Health,Female,23.28333333333333,Louisiana,22.0,LA
+Louisiana,Mental Health,Male,15.85,Louisiana,22.0,LA
+Louisiana,Smoking and Alcohol Use,Female,10.450000000000001,Louisiana,22.0,LA
+Louisiana,Smoking and Alcohol Use,Male,17.866666666666667,Louisiana,22.0,LA
+Maine,Caregiving,Female,36.42666666666666,Maine,23.0,ME
+Maine,Caregiving,Male,31.006666666666664,Maine,23.0,ME
+Maine,Cognitive Decline,Female,34.391666666666666,Maine,23.0,ME
+Maine,Cognitive Decline,Male,26.849999999999998,Maine,23.0,ME
+Maine,Mental Health,Female,19.25,Maine,23.0,ME
+Maine,Mental Health,Male,12.25,Maine,23.0,ME
+Maine,Smoking and Alcohol Use,Female,9.549999999999999,Maine,23.0,ME
+Maine,Smoking and Alcohol Use,Male,13.4,Maine,23.0,ME
+Maryland,Caregiving,Female,37.1,Maryland,24.0,MD
+Maryland,Caregiving,Male,33.57333333333334,Maryland,24.0,MD
+Maryland,Cognitive Decline,Female,24.616666666666664,Maryland,24.0,MD
+Maryland,Cognitive Decline,Male,27.941666666666663,Maryland,24.0,MD
+Maryland,Mental Health,Female,16.066666666666666,Maryland,24.0,MD
+Maryland,Mental Health,Male,9.15,Maryland,24.0,MD
+Maryland,Smoking and Alcohol Use,Female,7.3,Maryland,24.0,MD
+Maryland,Smoking and Alcohol Use,Male,9.549999999999999,Maryland,24.0,MD
+Massachusetts,Caregiving,Female,34.74,Massachusetts,25.0,MA
+Massachusetts,Caregiving,Male,30.27692307692308,Massachusetts,25.0,MA
+Massachusetts,Mental Health,Female,17.583333333333332,Massachusetts,25.0,MA
+Massachusetts,Mental Health,Male,11.016666666666666,Massachusetts,25.0,MA
+Massachusetts,Smoking and Alcohol Use,Female,9.416666666666666,Massachusetts,25.0,MA
+Massachusetts,Smoking and Alcohol Use,Male,10.799999999999999,Massachusetts,25.0,MA
+Michigan,Caregiving,Female,34.973333333333336,Michigan,26.0,MI
+Michigan,Caregiving,Male,35.0,Michigan,26.0,MI
+Michigan,Cognitive Decline,Female,34.84761904761905,Michigan,26.0,MI
+Michigan,Cognitive Decline,Male,27.810000000000002,Michigan,26.0,MI
+Michigan,Mental Health,Female,19.433333333333334,Michigan,26.0,MI
+Michigan,Mental Health,Male,10.35,Michigan,26.0,MI
+Michigan,Smoking and Alcohol Use,Female,10.6,Michigan,26.0,MI
+Michigan,Smoking and Alcohol Use,Male,14.700000000000001,Michigan,26.0,MI
+Midwest,Caregiving,Female,34.78666666666666,Midwest,,
+Midwest,Caregiving,Male,32.07,Midwest,,
+Midwest,Cognitive Decline,Female,35.329166666666666,Midwest,,
+Midwest,Cognitive Decline,Male,28.212500000000002,Midwest,,
+Midwest,Mental Health,Female,17.683333333333334,Midwest,,
+Midwest,Mental Health,Male,10.433333333333334,Midwest,,
+Midwest,Smoking and Alcohol Use,Female,10.616666666666667,Midwest,,
+Midwest,Smoking and Alcohol Use,Male,14.416666666666666,Midwest,,
+Minnesota,Caregiving,Female,34.126666666666665,Minnesota,27.0,MN
+Minnesota,Caregiving,Male,31.566666666666666,Minnesota,27.0,MN
+Minnesota,Cognitive Decline,Female,27.991666666666664,Minnesota,27.0,MN
+Minnesota,Cognitive Decline,Male,24.383333333333336,Minnesota,27.0,MN
+Minnesota,Mental Health,Female,16.966666666666665,Minnesota,27.0,MN
+Minnesota,Mental Health,Male,9.466666666666667,Minnesota,27.0,MN
+Minnesota,Smoking and Alcohol Use,Female,10.266666666666667,Minnesota,27.0,MN
+Minnesota,Smoking and Alcohol Use,Male,14.116666666666667,Minnesota,27.0,MN
+Mississippi,Caregiving,Female,35.74,Mississippi,28.0,MS
+Mississippi,Caregiving,Male,33.121428571428574,Mississippi,28.0,MS
+Mississippi,Cognitive Decline,Female,40.68333333333334,Mississippi,28.0,MS
+Mississippi,Cognitive Decline,Male,35.84166666666667,Mississippi,28.0,MS
+Mississippi,Mental Health,Female,18.516666666666666,Mississippi,28.0,MS
+Mississippi,Mental Health,Male,11.4,Mississippi,28.0,MS
+Mississippi,Smoking and Alcohol Use,Female,11.38,Mississippi,28.0,MS
+Mississippi,Smoking and Alcohol Use,Male,16.0,Mississippi,28.0,MS
+Missouri,Caregiving,Female,36.480000000000004,Missouri,29.0,MO
+Missouri,Caregiving,Male,30.16,Missouri,29.0,MO
+Missouri,Cognitive Decline,Female,34.225,Missouri,29.0,MO
+Missouri,Cognitive Decline,Male,28.625,Missouri,29.0,MO
+Missouri,Mental Health,Female,19.083333333333332,Missouri,29.0,MO
+Missouri,Mental Health,Male,11.25,Missouri,29.0,MO
+Missouri,Smoking and Alcohol Use,Female,11.35,Missouri,29.0,MO
+Missouri,Smoking and Alcohol Use,Male,14.216666666666667,Missouri,29.0,MO
+Montana,Mental Health,Female,18.349999999999998,Montana,30.0,MT
+Montana,Mental Health,Male,10.466666666666667,Montana,30.0,MT
+Montana,Smoking and Alcohol Use,Female,10.4,Montana,30.0,MT
+Montana,Smoking and Alcohol Use,Male,15.066666666666668,Montana,30.0,MT
+Nebraska,Caregiving,Female,32.92,Nebraska,31.0,NE
+Nebraska,Caregiving,Male,29.439999999999998,Nebraska,31.0,NE
+Nebraska,Cognitive Decline,Female,29.174999999999997,Nebraska,31.0,NE
+Nebraska,Cognitive Decline,Male,28.516666666666666,Nebraska,31.0,NE
+Nebraska,Mental Health,Female,13.966666666666667,Nebraska,31.0,NE
+Nebraska,Mental Health,Male,6.866666666666667,Nebraska,31.0,NE
+Nebraska,Smoking and Alcohol Use,Female,10.200000000000001,Nebraska,31.0,NE
+Nebraska,Smoking and Alcohol Use,Male,13.299999999999999,Nebraska,31.0,NE
+Nevada,Caregiving,Female,39.857142857142854,Nevada,32.0,NV
+Nevada,Caregiving,Male,23.225,Nevada,32.0,NV
+Nevada,Cognitive Decline,Female,27.315000000000005,Nevada,32.0,NV
+Nevada,Cognitive Decline,Male,29.652631578947368,Nevada,32.0,NV
+Nevada,Mental Health,Female,18.616666666666667,Nevada,32.0,NV
+Nevada,Mental Health,Male,10.233333333333334,Nevada,32.0,NV
+Nevada,Smoking and Alcohol Use,Female,11.683333333333335,Nevada,32.0,NV
+Nevada,Smoking and Alcohol Use,Male,13.5,Nevada,32.0,NV
+New Hampshire,Caregiving,Female,34.443333333333335,New Hampshire,33.0,NH
+New Hampshire,Caregiving,Male,31.263333333333332,New Hampshire,33.0,NH
+New Hampshire,Cognitive Decline,Female,29.308333333333334,New Hampshire,33.0,NH
+New Hampshire,Cognitive Decline,Male,27.189999999999998,New Hampshire,33.0,NH
+New Hampshire,Mental Health,Female,18.633333333333336,New Hampshire,33.0,NH
+New Hampshire,Mental Health,Male,10.883333333333333,New Hampshire,33.0,NH
+New Hampshire,Smoking and Alcohol Use,Female,9.299999999999999,New Hampshire,33.0,NH
+New Hampshire,Smoking and Alcohol Use,Male,12.016666666666666,New Hampshire,33.0,NH
+New Jersey,Caregiving,Female,35.77333333333333,New Jersey,34.0,NJ
+New Jersey,Caregiving,Male,29.5,New Jersey,34.0,NJ
+New Jersey,Mental Health,Female,14.9,New Jersey,34.0,NJ
+New Jersey,Mental Health,Male,9.683333333333334,New Jersey,34.0,NJ
+New Jersey,Smoking and Alcohol Use,Female,7.483333333333334,New Jersey,34.0,NJ
+New Jersey,Smoking and Alcohol Use,Male,11.85,New Jersey,34.0,NJ
+New Mexico,Caregiving,Female,38.81333333333334,New Mexico,35.0,NM
+New Mexico,Caregiving,Male,33.1,New Mexico,35.0,NM
+New Mexico,Cognitive Decline,Female,38.9,New Mexico,35.0,NM
+New Mexico,Cognitive Decline,Male,34.65,New Mexico,35.0,NM
+New Mexico,Mental Health,Female,17.183333333333334,New Mexico,35.0,NM
+New Mexico,Mental Health,Male,13.533333333333333,New Mexico,35.0,NM
+New Mexico,Smoking and Alcohol Use,Female,8.65,New Mexico,35.0,NM
+New Mexico,Smoking and Alcohol Use,Male,13.633333333333333,New Mexico,35.0,NM
+New York,Caregiving,Female,34.49333333333333,New York,36.0,NY
+New York,Caregiving,Male,32.946666666666665,New York,36.0,NY
+New York,Cognitive Decline,Female,36.38333333333333,New York,36.0,NY
+New York,Cognitive Decline,Male,30.308333333333334,New York,36.0,NY
+New York,Mental Health,Female,16.516666666666666,New York,36.0,NY
+New York,Mental Health,Male,11.35,New York,36.0,NY
+New York,Smoking and Alcohol Use,Female,8.833333333333334,New York,36.0,NY
+New York,Smoking and Alcohol Use,Male,11.950000000000001,New York,36.0,NY
+North Carolina,Caregiving,Female,36.486666666666665,North Carolina,37.0,NC
+North Carolina,Caregiving,Male,35.519999999999996,North Carolina,37.0,NC
+North Carolina,Cognitive Decline,Female,32.52222222222222,North Carolina,37.0,NC
+North Carolina,Cognitive Decline,Male,32.32222222222222,North Carolina,37.0,NC
+North Carolina,Mental Health,Female,19.23333333333333,North Carolina,37.0,NC
+North Carolina,Mental Health,Male,10.216666666666667,North Carolina,37.0,NC
+North Carolina,Smoking and Alcohol Use,Female,9.733333333333333,North Carolina,37.0,NC
+North Carolina,Smoking and Alcohol Use,Male,11.666666666666666,North Carolina,37.0,NC
+North Dakota,Caregiving,Female,32.8,North Dakota,38.0,ND
+North Dakota,Caregiving,Male,29.846666666666668,North Dakota,38.0,ND
+North Dakota,Cognitive Decline,Female,19.84444444444445,North Dakota,38.0,ND
+North Dakota,Cognitive Decline,Male,20.35,North Dakota,38.0,ND
+North Dakota,Mental Health,Female,15.9,North Dakota,38.0,ND
+North Dakota,Mental Health,Male,8.683333333333334,North Dakota,38.0,ND
+North Dakota,Smoking and Alcohol Use,Female,11.116666666666667,North Dakota,38.0,ND
+North Dakota,Smoking and Alcohol Use,Male,15.716666666666669,North Dakota,38.0,ND
+Northeast,Caregiving,Female,37.28333333333333,Northeast,,
+Northeast,Caregiving,Male,33.693333333333335,Northeast,,
+Northeast,Cognitive Decline,Female,34.291666666666664,Northeast,,
+Northeast,Cognitive Decline,Male,28.891666666666666,Northeast,,
+Northeast,Mental Health,Female,16.8,Northeast,,
+Northeast,Mental Health,Male,10.700000000000001,Northeast,,
+Northeast,Smoking and Alcohol Use,Female,9.033333333333333,Northeast,,
+Northeast,Smoking and Alcohol Use,Male,12.433333333333332,Northeast,,
+Ohio,Caregiving,Female,34.519999999999996,Ohio,39.0,OH
+Ohio,Caregiving,Male,32.86666666666667,Ohio,39.0,OH
+Ohio,Cognitive Decline,Female,36.354166666666664,Ohio,39.0,OH
+Ohio,Cognitive Decline,Male,30.347826086956523,Ohio,39.0,OH
+Ohio,Mental Health,Female,18.883333333333333,Ohio,39.0,OH
+Ohio,Mental Health,Male,13.033333333333333,Ohio,39.0,OH
+Ohio,Smoking and Alcohol Use,Female,12.366666666666667,Ohio,39.0,OH
+Ohio,Smoking and Alcohol Use,Male,15.083333333333334,Ohio,39.0,OH
+Oklahoma,Caregiving,Female,36.46666666666667,Oklahoma,40.0,OK
+Oklahoma,Caregiving,Male,28.741666666666664,Oklahoma,40.0,OK
+Oklahoma,Cognitive Decline,Female,33.50833333333333,Oklahoma,40.0,OK
+Oklahoma,Cognitive Decline,Male,31.741666666666664,Oklahoma,40.0,OK
+Oklahoma,Mental Health,Female,22.05,Oklahoma,40.0,OK
+Oklahoma,Mental Health,Male,13.433333333333332,Oklahoma,40.0,OK
+Oklahoma,Smoking and Alcohol Use,Female,9.433333333333334,Oklahoma,40.0,OK
+Oklahoma,Smoking and Alcohol Use,Male,13.25,Oklahoma,40.0,OK
+Oregon,Caregiving,Female,37.96333333333334,Oregon,41.0,OR
+Oregon,Caregiving,Male,34.61666666666667,Oregon,41.0,OR
+Oregon,Cognitive Decline,Female,32.445454545454545,Oregon,41.0,OR
+Oregon,Cognitive Decline,Male,25.245454545454546,Oregon,41.0,OR
+Oregon,Mental Health,Female,20.433333333333334,Oregon,41.0,OR
+Oregon,Mental Health,Male,12.799999999999999,Oregon,41.0,OR
+Oregon,Smoking and Alcohol Use,Female,10.366666666666667,Oregon,41.0,OR
+Oregon,Smoking and Alcohol Use,Male,13.699999999999998,Oregon,41.0,OR
+Pennsylvania,Caregiving,Female,38.873333333333335,Pennsylvania,42.0,PA
+Pennsylvania,Caregiving,Male,37.33846153846154,Pennsylvania,42.0,PA
+Pennsylvania,Cognitive Decline,Female,34.78333333333334,Pennsylvania,42.0,PA
+Pennsylvania,Cognitive Decline,Male,30.816666666666666,Pennsylvania,42.0,PA
+Pennsylvania,Mental Health,Female,17.75,Pennsylvania,42.0,PA
+Pennsylvania,Mental Health,Male,9.85,Pennsylvania,42.0,PA
+Pennsylvania,Smoking and Alcohol Use,Female,11.5,Pennsylvania,42.0,PA
+Pennsylvania,Smoking and Alcohol Use,Male,14.399999999999999,Pennsylvania,42.0,PA
+Puerto Rico,Caregiving,Female,38.940000000000005,Puerto Rico,72.0,PR
+Puerto Rico,Caregiving,Male,35.666666666666664,Puerto Rico,72.0,PR
+Puerto Rico,Cognitive Decline,Female,32.4,Puerto Rico,72.0,PR
+Puerto Rico,Cognitive Decline,Male,39.82,Puerto Rico,72.0,PR
+Puerto Rico,Mental Health,Female,20.316666666666666,Puerto Rico,72.0,PR
+Puerto Rico,Mental Health,Male,15.633333333333333,Puerto Rico,72.0,PR
+Puerto Rico,Smoking and Alcohol Use,Female,5.720000000000001,Puerto Rico,72.0,PR
+Puerto Rico,Smoking and Alcohol Use,Male,14.283333333333333,Puerto Rico,72.0,PR
+Rhode Island,Caregiving,Female,32.92666666666667,Rhode Island,44.0,RI
+Rhode Island,Caregiving,Male,32.31333333333333,Rhode Island,44.0,RI
+Rhode Island,Cognitive Decline,Female,38.666666666666664,Rhode Island,44.0,RI
+Rhode Island,Cognitive Decline,Male,29.616666666666664,Rhode Island,44.0,RI
+Rhode Island,Mental Health,Female,17.8,Rhode Island,44.0,RI
+Rhode Island,Mental Health,Male,11.583333333333334,Rhode Island,44.0,RI
+Rhode Island,Smoking and Alcohol Use,Female,8.483333333333333,Rhode Island,44.0,RI
+Rhode Island,Smoking and Alcohol Use,Male,13.766666666666666,Rhode Island,44.0,RI
+South,Caregiving,Female,37.013333333333335,South,,
+South,Caregiving,Male,32.809999999999995,South,,
+South,Cognitive Decline,Female,35.65833333333334,South,,
+South,Cognitive Decline,Male,30.958333333333332,South,,
+South,Mental Health,Female,19.233333333333334,South,,
+South,Mental Health,Male,11.516666666666666,South,,
+South,Smoking and Alcohol Use,Female,9.1,South,,
+South,Smoking and Alcohol Use,Male,12.816666666666668,South,,
+South Carolina,Caregiving,Female,37.12,South Carolina,45.0,SC
+South Carolina,Caregiving,Male,33.26,South Carolina,45.0,SC
+South Carolina,Cognitive Decline,Female,37.34166666666667,South Carolina,45.0,SC
+South Carolina,Cognitive Decline,Male,27.483333333333334,South Carolina,45.0,SC
+South Carolina,Mental Health,Female,17.683333333333334,South Carolina,45.0,SC
+South Carolina,Mental Health,Male,11.583333333333334,South Carolina,45.0,SC
+South Carolina,Smoking and Alcohol Use,Female,10.35,South Carolina,45.0,SC
+South Carolina,Smoking and Alcohol Use,Male,14.583333333333334,South Carolina,45.0,SC
+South Dakota,Caregiving,Female,33.49285714285714,South Dakota,46.0,SD
+South Dakota,Caregiving,Male,34.40833333333334,South Dakota,46.0,SD
+South Dakota,Cognitive Decline,Female,30.240000000000002,South Dakota,46.0,SD
+South Dakota,Cognitive Decline,Male,21.825,South Dakota,46.0,SD
+South Dakota,Mental Health,Female,18.95,South Dakota,46.0,SD
+South Dakota,Mental Health,Male,7.35,South Dakota,46.0,SD
+South Dakota,Smoking and Alcohol Use,Female,7.575,South Dakota,46.0,SD
+South Dakota,Smoking and Alcohol Use,Male,14.416666666666666,South Dakota,46.0,SD
+Tennessee,Cognitive Decline,Female,38.6,Tennessee,47.0,TN
+Tennessee,Cognitive Decline,Male,34.0,Tennessee,47.0,TN
+Tennessee,Mental Health,Female,24.133333333333336,Tennessee,47.0,TN
+Tennessee,Mental Health,Male,14.783333333333333,Tennessee,47.0,TN
+Tennessee,Smoking and Alcohol Use,Female,10.666666666666666,Tennessee,47.0,TN
+Tennessee,Smoking and Alcohol Use,Male,15.15,Tennessee,47.0,TN
+Texas,Caregiving,Female,37.766666666666666,Texas,48.0,TX
+Texas,Caregiving,Male,31.266666666666666,Texas,48.0,TX
+Texas,Cognitive Decline,Female,36.84166666666667,Texas,48.0,TX
+Texas,Cognitive Decline,Male,32.18333333333333,Texas,48.0,TX
+Texas,Mental Health,Female,19.216666666666665,Texas,48.0,TX
+Texas,Mental Health,Male,9.85,Texas,48.0,TX
+Texas,Smoking and Alcohol Use,Female,8.116666666666665,Texas,48.0,TX
+Texas,Smoking and Alcohol Use,Male,12.050000000000002,Texas,48.0,TX
+"United States, DC & Territories",Caregiving,Female,36.22666666666667,"United States, DC & Territories",,
+"United States, DC & Territories",Caregiving,Male,32.809999999999995,"United States, DC & Territories",,
+"United States, DC & Territories",Cognitive Decline,Female,34.362500000000004,"United States, DC & Territories",,
+"United States, DC & Territories",Cognitive Decline,Male,28.962500000000002,"United States, DC & Territories",,
+"United States, DC & Territories",Mental Health,Female,18.116666666666667,"United States, DC & Territories",,
+"United States, DC & Territories",Mental Health,Male,11.016666666666666,"United States, DC & Territories",,
+"United States, DC & Territories",Smoking and Alcohol Use,Female,9.183333333333334,"United States, DC & Territories",,
+"United States, DC & Territories",Smoking and Alcohol Use,Male,12.966666666666667,"United States, DC & Territories",,
+Utah,Caregiving,Female,33.70333333333333,Utah,49.0,UT
+Utah,Caregiving,Male,31.573333333333334,Utah,49.0,UT
+Utah,Cognitive Decline,Female,34.045833333333334,Utah,49.0,UT
+Utah,Cognitive Decline,Male,25.125,Utah,49.0,UT
+Utah,Mental Health,Female,19.016666666666666,Utah,49.0,UT
+Utah,Mental Health,Male,10.883333333333333,Utah,49.0,UT
+Utah,Smoking and Alcohol Use,Female,4.033333333333333,Utah,49.0,UT
+Utah,Smoking and Alcohol Use,Male,7.983333333333333,Utah,49.0,UT
+Vermont,Caregiving,Female,35.21333333333334,Vermont,50.0,VT
+Vermont,Caregiving,Male,28.966666666666665,Vermont,50.0,VT
+Vermont,Cognitive Decline,Female,29.141666666666666,Vermont,50.0,VT
+Vermont,Cognitive Decline,Male,28.65833333333333,Vermont,50.0,VT
+Vermont,Mental Health,Female,19.033333333333335,Vermont,50.0,VT
+Vermont,Mental Health,Male,12.383333333333333,Vermont,50.0,VT
+Vermont,Smoking and Alcohol Use,Female,9.666666666666666,Vermont,50.0,VT
+Vermont,Smoking and Alcohol Use,Male,13.35,Vermont,50.0,VT
+Virgin Islands,Mental Health,Female,,Virgin Islands,,
+Virgin Islands,Mental Health,Male,,Virgin Islands,,
+Virgin Islands,Smoking and Alcohol Use,Female,,Virgin Islands,,
+Virgin Islands,Smoking and Alcohol Use,Male,4.1,Virgin Islands,,
+Virginia,Caregiving,Female,38.156666666666666,Virginia,51.0,VA
+Virginia,Caregiving,Male,32.42,Virginia,51.0,VA
+Virginia,Cognitive Decline,Female,32.81666666666667,Virginia,51.0,VA
+Virginia,Cognitive Decline,Male,26.269565217391307,Virginia,51.0,VA
+Virginia,Mental Health,Female,17.733333333333334,Virginia,51.0,VA
+Virginia,Mental Health,Male,10.799999999999999,Virginia,51.0,VA
+Virginia,Smoking and Alcohol Use,Female,9.233333333333334,Virginia,51.0,VA
+Virginia,Smoking and Alcohol Use,Male,12.4,Virginia,51.0,VA
+Washington,Caregiving,Female,36.776666666666664,Washington,53.0,WA
+Washington,Caregiving,Male,30.896666666666665,Washington,53.0,WA
+Washington,Cognitive Decline,Female,35.699999999999996,Washington,53.0,WA
+Washington,Cognitive Decline,Male,25.849999999999998,Washington,53.0,WA
+Washington,Mental Health,Female,19.366666666666667,Washington,53.0,WA
+Washington,Mental Health,Male,11.116666666666667,Washington,53.0,WA
+Washington,Smoking and Alcohol Use,Female,8.6,Washington,53.0,WA
+Washington,Smoking and Alcohol Use,Male,11.383333333333333,Washington,53.0,WA
+West,Caregiving,Female,35.913333333333334,West,,
+West,Caregiving,Male,32.79666666666667,West,,
+West,Cognitive Decline,Female,31.708333333333332,West,,
+West,Cognitive Decline,Male,26.95,West,,
+West,Mental Health,Female,17.5,West,,
+West,Mental Health,Male,10.833333333333334,West,,
+West,Smoking and Alcohol Use,Female,8.316666666666666,West,,
+West,Smoking and Alcohol Use,Male,12.15,West,,
+West Virginia,Caregiving,Female,38.04,West Virginia,54.0,WV
+West Virginia,Caregiving,Male,32.70666666666667,West Virginia,54.0,WV
+West Virginia,Cognitive Decline,Female,38.6,West Virginia,54.0,WV
+West Virginia,Cognitive Decline,Male,32.766666666666666,West Virginia,54.0,WV
+West Virginia,Mental Health,Female,25.2,West Virginia,54.0,WV
+West Virginia,Mental Health,Male,14.333333333333334,West Virginia,54.0,WV
+West Virginia,Smoking and Alcohol Use,Female,11.683333333333335,West Virginia,54.0,WV
+West Virginia,Smoking and Alcohol Use,Male,16.25,West Virginia,54.0,WV
+Wisconsin,Caregiving,Female,35.376666666666665,Wisconsin,55.0,WI
+Wisconsin,Caregiving,Male,30.883333333333333,Wisconsin,55.0,WI
+Wisconsin,Cognitive Decline,Female,30.316666666666666,Wisconsin,55.0,WI
+Wisconsin,Cognitive Decline,Male,27.150000000000002,Wisconsin,55.0,WI
+Wisconsin,Mental Health,Female,17.416666666666668,Wisconsin,55.0,WI
+Wisconsin,Mental Health,Male,9.833333333333334,Wisconsin,55.0,WI
+Wisconsin,Smoking and Alcohol Use,Female,11.133333333333333,Wisconsin,55.0,WI
+Wisconsin,Smoking and Alcohol Use,Male,14.9,Wisconsin,55.0,WI
+Wyoming,Caregiving,Female,33.04666666666667,Wyoming,56.0,WY
+Wyoming,Caregiving,Male,31.02857142857143,Wyoming,56.0,WY
+Wyoming,Cognitive Decline,Female,26.144444444444446,Wyoming,56.0,WY
+Wyoming,Cognitive Decline,Male,19.114285714285717,Wyoming,56.0,WY
+Wyoming,Mental Health,Female,17.71666666666667,Wyoming,56.0,WY
+Wyoming,Mental Health,Male,10.4,Wyoming,56.0,WY
+Wyoming,Smoking and Alcohol Use,Female,10.049999999999999,Wyoming,56.0,WY
+Wyoming,Smoking and Alcohol Use,Male,14.799999999999999,Wyoming,56.0,WY
