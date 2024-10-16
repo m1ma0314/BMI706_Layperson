@@ -7,17 +7,6 @@ df_prevalence = pd.read_csv('prevalence_df.csv')
 df_prevalence['Count'] = df_prevalence['Number (in thousands)'] * 1000
 
 def show_overall_page():
-    #st.markdown(
-    #    """
-    #    <style>
-    #    .center-content {
-    #        display: flex;
-    #        justify-content: center;
-    #    }
-    #    </style>
-    #    """,
-    #    unsafe_allow_html=True
-    #)
 
     st.markdown("<h1 style='text-align: center;'>Overview of Alzheimer's Prevalence Across the U.S.</h1>", unsafe_allow_html=True)
 
@@ -29,10 +18,6 @@ def show_overall_page():
         fill='lightgray',
         stroke='white'
     )
-    #.project('albersUsa').properties(
-        #width=300, 
-        #height=250  
-    #)
 
     prevalence_scale = alt.Scale(domain=[df_prevalence['Percent'].min(), df_prevalence['Percent'].max()], scheme='oranges')
     prevalence_color = alt.Color(field="Percent", type="quantitative", scale=prevalence_scale, title="Prevalence (%)")
@@ -50,8 +35,6 @@ def show_overall_page():
     ).transform_filter(
         selector
     ).project('albersUsa').properties(
-        #width=300, 
-        #height=250, 
         title="Alzheimer's Prevalence Across U.S. States in 2022"
     )
 
@@ -61,10 +44,7 @@ def show_overall_page():
         strokeWidth=2
     ).transform_filter(
         selector  
-    )#.project('albersUsa').properties(
-        #width=300,
-        #height=250
-    #)
+    )
 
     top_10 = df_prevalence.nlargest(10, 'Count')
 
@@ -82,37 +62,14 @@ def show_overall_page():
     ).add_params(
         selector
     ).properties(
-        #width=130,  
-        #height=250, 
         title="Top 10 States by Number of People"
     )
 
-    prevalence_chart = alt.hconcat(
-        ranking_chart,
-        background + prevalence_map + selected_outline
-    ).resolve_scale(
-        color='independent'
-    )
-    
-    #prevalence_chart = alt.hconcat(
-    #    ranking_chart.properties(height=0),  
-    #    (background + prevalence_map + selected_outline).properties(width=500) 
-    #).resolve_scale(
-    #    color='independent'
-    #)
 
-    col1, col2 = st.columns([1, 1.5])  # Adjust the ratio (1:1.5 means col2 is wider)
+    col1, col2 = st.columns([1, 1.5])
 
-    # Display bar chart in the first column (40% width)
     with col1:
         st.altair_chart(ranking_chart, use_container_width=True)
 
-    # Display map in the second column (60% width)
     with col2:
         st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
-
-    # Use container width for centering and full width layout
-    st.altair_chart(prevalence_chart, use_container_width=True)
-    #st.markdown("<div class='center-content'>", unsafe_allow_html=True)
-    #st.altair_chart(prevalence_chart, use_container_width=True)
-    #st.markdown("</div>", unsafe_allow_html=True)
