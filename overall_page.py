@@ -7,17 +7,17 @@ df_prevalence = pd.read_csv('prevalence_df.csv')
 df_prevalence['Count'] = df_prevalence['Number (in thousands)'] * 1000
 
 def show_overall_page():
-    st.markdown(
-        """
-        <style>
-        .center-content {
-            display: flex;
-            justify-content: center;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    #st.markdown(
+    #    """
+    #    <style>
+    #    .center-content {
+    #        display: flex;
+    #        justify-content: center;
+    #    }
+    #    </style>
+    #    """,
+    #    unsafe_allow_html=True
+    #)
 
     st.markdown("<h1 style='text-align: center;'>Overview of Alzheimer's Prevalence Across the U.S.</h1>", unsafe_allow_html=True)
 
@@ -92,8 +92,10 @@ def show_overall_page():
         background + prevalence_map + selected_outline
     ).resolve_scale(
         color='independent'
+    ).properties(
+        padding={"left": 10, "right": 10, "top": 10, "bottom": 10}
     )
 
-    st.markdown("<div class='center-content'>", unsafe_allow_html=True)
+    #st.markdown("<div class='center-content'>", unsafe_allow_html=True)
     st.altair_chart(prevalence_chart, use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    #st.markdown("</div>", unsafe_allow_html=True)
