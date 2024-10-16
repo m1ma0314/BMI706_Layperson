@@ -19,7 +19,7 @@ def show_about_page():
     
     The data used in this app is obtained from publicly available sources:
     
-    - Alzheimer's Disease prevalence data: [Original Dataset URL](https://www.alz.org/media/Documents/alzheimers-facts-and-figures.pdf)
+    - Alzheimer's Disease prevalence data: [Prevalence Dataset URL](https://www.alz.org/media/Documents/alzheimers-facts-and-figures.pdf)
     - Alzheimer's Disease related data from CDC's Behavioral Risk Factor Surveillance System (BRFSS): [CDC BRFSS Dataset](https://data.cdc.gov/Healthy-Aging/Alzheimer-s-Disease-and-Healthy-Aging-Data/hfr9-rurv/about_data/)
     
     ### About the Developers:
