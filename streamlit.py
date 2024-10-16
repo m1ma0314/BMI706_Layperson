@@ -95,6 +95,9 @@ final_chart = alt.vconcat(
 # Display the final combined chart in Streamlit
 st.altair_chart(final_chart, use_container_width=True)
 
+
+
+
 ### Task 2
 
 df = pd.read_csv('cognitive_decline_df_22.csv')

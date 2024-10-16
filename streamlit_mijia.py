@@ -92,5 +92,14 @@ final_chart = alt.vconcat(
     color='independent'
 )
 
+
+final_chart2 = alt.vconcat(
+    background + prevalence_map,
+    background + cognitive_map,
+).resolve_scale(
+    color='independent'
+)
+
+
 # Display the final combined chart in Streamlit
 st.altair_chart(final_chart, use_container_width=True)
