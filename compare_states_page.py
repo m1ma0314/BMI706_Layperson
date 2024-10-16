@@ -2,10 +2,10 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-def show_compare_states_page():
-
-    st.set_page_config(page_title='Compare Factors associated with Alzheimer Elders between States', 
+st.set_page_config(page_title='Compare Factors associated with Alzheimer Elders between States', 
                        layout='wide')
+
+def show_compare_states_page():
                        
     # Load datasets (adjust paths as necessary)
     sex_data = pd.read_csv('sex_averaged_df.csv')
