@@ -7,45 +7,14 @@ import compare_topics_page
 import compare_states_page
 import about_page
 
-st.set_page_config(page_title='Test', 
-                       layout='wide',
-                       menu_items={
-                        'Get help': 'https://github.com/m1ma0314/BMI706_Layperson/blob/main/README.md',
-                        'About': "Hi! Welcome to our page for `Alzheimer Visualier`. "
-                    })
-
-# Set up navigation with a sidebar
-# with st.sidebar:
-#     selected = option_menu(
-#         "Main Menu", 
-#         ["Overall", "Compare Topics", "Compare States"],
-#         icons=['people-fill', 'capsule', 'bar-chart'],
-#         menu_icon="cast", default_index=0,
-#         styles={
-#             "icon": {"color": "orange", "font-size": "25px"}, 
-#             "nav-link": {
-#                 "font-size": "16px", 
-#                 "text-align": "left", 
-#                 "margin": "0px", 
-#                 "--hover-color": "#6a0dad",  # Purple on hover
-#             },
-#             "nav-link-selected": {
-#                 "background-color": "#6a0dad",  # Purple when selected
-#                 "color": "white"
-#             },
-#         }
-#     )
-
-# # Page navigation logic
-# if selected == "Overall":
-#     overall_page.show_overall_page()
-
-# elif selected == "Compare Topics":
-#     compare_topics_page.show_compare_topics_page()
-
-# elif selected == "Compare States":
-#     compare_states_page.show_compare_states_page()
-
+st.set_page_config(
+    page_title='Test', 
+    layout='wide',
+    menu_items={
+        'Get help': 'https://github.com/m1ma0314/BMI706_Layperson/blob/main/README.md',
+        'About': "Hi! Welcome to our page for `Alzheimer Visualizer`."
+    }
+)
 
 st.markdown(
     """
@@ -69,7 +38,7 @@ st.markdown(
 with st.sidebar:
     selected = option_menu(
         "Main Menu", 
-        ["Overall", "Compare Topics", "Compare States","About"],
+        ["Overall", "Compare Topics", "Compare States", "About"],
         icons=['people-fill', 'capsule', 'bar-chart', 'emoji-sunglasses'],
         menu_icon="cast", default_index=0,
         styles={

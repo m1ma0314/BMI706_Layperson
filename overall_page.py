@@ -3,14 +3,46 @@ from vega_datasets import data
 import pandas as pd
 import streamlit as st
 
-# Load prevalence data for Alzheimer's
-df_prevalence = pd.read_csv('prevalence_df.csv')
-df_prevalence['Count'] = df_prevalence['Number (in thousands)'] * 1000
+# Cache the data loading to avoid rerunning it on every interaction
+@st.cache_data
+def load_prevalence_data():
+    df = pd.read_csv('prevalence_df.csv')
+    df['Count'] = df['Number (in thousands)'] * 1000
+    return df
+
+@st.cache_data
+def load_engagement_data():
+    df = pd.read_csv('averaged_4topics.csv')
+    df.columns = df.columns.str.strip().str.replace(' ', '_')
+    df['Data_Value'] = pd.to_numeric(df['Data_Value'], errors='coerce')
+    
+    # Mapping of states to regions
+    regions = {
+        'Northeast': ['Maine', 'New Hampshire', 'Vermont', 'Massachusetts', 'Rhode Island', 'Connecticut', 'New York', 'New Jersey', 'Pennsylvania'],
+        'Midwest': ['Ohio', 'Indiana', 'Illinois', 'Michigan', 'Wisconsin', 'Minnesota', 'Iowa', 'Missouri', 'North Dakota', 'South Dakota', 'Nebraska', 'Kansas'],
+        'South': ['Delaware', 'Maryland', 'District_of_Columbia', 'Virginia', 'West Virginia', 'North Carolina', 'South Carolina', 'Georgia', 'Florida', 'Kentucky', 'Tennessee', 'Mississippi', 'Alabama', 'Oklahoma', 'Texas', 'Arkansas', 'Louisiana'],
+        'West': ['Idaho', 'Montana', 'Wyoming', 'Nevada', 'Utah', 'Colorado', 'Arizona', 'New Mexico', 'Alaska', 'Washington', 'Oregon', 'California', 'Hawaii']
+    }
+    
+    state_to_region = {state: region for region, states in regions.items() for state in states}
+    df['Region'] = df['LocationDesc'].map(state_to_region)
+    
+    df_filtered = df.dropna(subset=['Region'])
+    df_filtered['Data_Value'] = df_filtered['Data_Value'].fillna(0)
+    
+    df_aggregated_region = df_filtered.groupby(['Region', 'Class'], as_index=False).agg({'Data_Value': 'mean'})
+    df_aggregated_state = df_filtered.groupby(['LocationDesc', 'Region', 'Class'], as_index=False).agg({'Data_Value': 'mean'})
+    
+    return df_aggregated_region, df_aggregated_state
+
+# Load the data
+df_prevalence = load_prevalence_data()
+df_aggregated_region, df_aggregated_state = load_engagement_data()
 
 # Alzheimer's prevalence page
 def show_overall_page():
 
-    st.markdown("<h1 style='text-align: center;'>Overview of Alzheimer's Prevalence Across the U.S.</h1>", unsafe_allow_html=True)
+    st.title("Overview of Alzheimer's Prevalence Across the U.S.")   
 
     states = alt.topo_feature(data.us_10m.url, feature='states')
 
@@ -74,33 +106,17 @@ def show_overall_page():
     )
 
     # Layout for map and top 10 bar chart
-    col1, col2 = st.columns([1, 1.5])
-
-    # Now we integrate the other chart with Alzheimer's data and discussions
-    # Assuming df has been loaded and cleaned as per your existing code
-    df = pd.read_csv('averaged_4topics.csv')
-    df.columns = df.columns.str.strip().str.replace(' ', '_')
-    df['Data_Value'] = pd.to_numeric(df['Data_Value'], errors='coerce')
-
-    regions = {
-        'Northeast': ['Maine', 'New Hampshire', 'Vermont', 'Massachusetts', 'Rhode Island', 'Connecticut', 'New York', 'New Jersey', 'Pennsylvania'],
-        'Midwest': ['Ohio', 'Indiana', 'Illinois', 'Michigan', 'Wisconsin', 'Minnesota', 'Iowa', 'Missouri', 'North Dakota', 'South Dakota', 'Nebraska', 'Kansas'],
-        'South': ['Delaware', 'Maryland', 'District_of_Columbia', 'Virginia', 'West Virginia', 'North Carolina', 'South Carolina', 'Georgia', 'Florida', 'Kentucky', 'Tennessee', 'Mississippi', 'Alabama', 'Oklahoma', 'Texas', 'Arkansas', 'Louisiana'],
-        'West': ['Idaho', 'Montana', 'Wyoming', 'Nevada', 'Utah', 'Colorado', 'Arizona', 'New Mexico', 'Alaska', 'Washington', 'Oregon', 'California', 'Hawaii']
-    }
-
-    state_to_region = {state: region for region, states in regions.items() for state in states}
-
-    df['Region'] = df['LocationDesc'].map(state_to_region)
-
-    df_filtered = df.dropna(subset=['Region'])
-    df_filtered['Data_Value'] = df_filtered['Data_Value'].fillna(0)
-
-    # Group by region and class (topics) to calculate the average percentage for each region
-    df_aggregated_region = df_filtered.groupby(['Region', 'Class'], as_index=False).agg({'Data_Value': 'mean'})
-
-    # Group by state to calculate the average percentage for each state
-    df_aggregated_state = df_filtered.groupby(['LocationDesc', 'Region', 'Class'], as_index=False).agg({'Data_Value': 'mean'})
+    st.markdown('<div class="centered-chart">', unsafe_allow_html=True)
+    st.altair_chart(
+        alt.hconcat(
+            ranking_chart.properties(width=165),
+            (background + prevalence_map + selected_outline).properties(width=500)  # Set map width
+        ).resolve_scale(
+            color='independent'
+        ),
+        use_container_width=True
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
 
     # Regional bar chart with topic selector
     topic_selection = alt.selection_point(fields=['Class'], bind='legend')  
@@ -125,34 +141,31 @@ def show_overall_page():
 
     # State-level bar chart for selected topic
     state_bar = alt.Chart(df_aggregated_state).mark_bar().encode(
-        x=alt.X('LocationDesc:N', title='State', sort=alt.EncodingSortField(field='Data_Value', op='mean', order='descending')),  
+        x=alt.X('LocationDesc:N', 
+                title='State', 
+                sort=alt.EncodingSortField(field='Data_Value', op='mean', order='descending'),
+                axis=alt.Axis(labelAngle=315, 
+                            labelFontSize=12,  
+                            labelOverlap=False)  
+        ),  
         y=alt.Y('Data_Value:Q', title='Avg. Engagement (%)', scale=alt.Scale(domain=[0, 50]), stack=None), 
         color=alt.Color('Class:N', title='Discussion Topic'),  
-        tooltip=[alt.Tooltip('LocationDesc:N', title='State'), alt.Tooltip('Class:N', title='Topic'), alt.Tooltip('Data_Value:Q', title='Avg. Engagement (%)')]
+        tooltip=[alt.Tooltip('LocationDesc:N', title='State'), 
+                alt.Tooltip('Class:N', title='Topic'), 
+                alt.Tooltip('Data_Value:Q', title='Avg. Engagement (%)')]
     ).transform_filter(
         topic_selection  
     ).properties(
-        width=600,
+        width=1000, 
         height=400,
         title="State-Level Engagement in Selected Topic"
     )
 
-    #with col1:
-    #    st.altair_chart(ranking_chart, use_container_width=True)
-
-    #with col2:
-    #    st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
-
-    st.altair_chart(
-    alt.hconcat(
-        ranking_chart.properties(width=150),  # Set ranking_chart width
-        (background + prevalence_map + selected_outline).properties(width=500)  # Set map width
-    ).resolve_scale(
-        color='independent'
-    ),
-    use_container_width=True
-    )
-
     # Combine the two charts into a linked view
+    st.markdown('<div class="centered-chart">', unsafe_allow_html=True)
     st.altair_chart(alt.vconcat(grouped_bar, state_bar), use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Display the page
+show_overall_page()
 

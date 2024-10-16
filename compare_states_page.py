@@ -44,7 +44,7 @@ def show_compare_states_page():
     with col1_prevalence:
         if not alz_state_1.empty:
             prevalence_1 = alz_state_1.iloc[0]['Percent']
-            number_affected_1 = alz_state_1.iloc[0]['Count']
+            number_affected_1 = int(alz_state_1.iloc[0]['Count'])
             st.markdown(f"#### Prevalence of Alzheimer's Disease: {prevalence_1}%")
             st.markdown(f"#### Number of People with Alzheimer's Disease: {number_affected_1}")
         else:
@@ -55,7 +55,7 @@ def show_compare_states_page():
         #st.markdown(f"#### {prevalence_2}%")
         if not alz_state_2.empty:
             prevalence_2 = alz_state_2.iloc[0]['Percent']
-            number_affected_2 = alz_state_2.iloc[0]['Count']
+            number_affected_2 = int(alz_state_2.iloc[0]['Count'])
             st.markdown(f"#### Prevalence of Alzheimer's Disease: {prevalence_2}%")
             st.markdown(f"#### Number of People with Alzheimer's Disease: {number_affected_2}")
         else:
@@ -80,7 +80,7 @@ def show_compare_states_page():
 
         # Bar chart for overall comparison for State 1
         bar_chart_state_1 = alt.Chart(overall_data_1).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics'),
+            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             y=alt.Y('Data_Value:Q', title='Average %'),
             color='Class:N',
             tooltip=['Class', 'Data_Value']
@@ -90,7 +90,7 @@ def show_compare_states_page():
 
         # Bar chart for overall comparison for State 2
         bar_chart_state_2 = alt.Chart(overall_data_2).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics'),
+            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             y=alt.Y('Data_Value:Q', title='Average %'),
             color='Class:N',
             tooltip=['Class', 'Data_Value']
@@ -99,8 +99,8 @@ def show_compare_states_page():
         )
 
         # Bar chart for Sex data comparison for State 1
-        bar_chart_sex_1 = alt.Chart(sex_data_state_1).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics'),
+        bar_chart_sex_1 = alt.Chart(sex_data_state_1).mark_bar(size=30).encode(
+            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value:Q', title='Average %'),
             color='Stratification2:N',
@@ -113,7 +113,7 @@ def show_compare_states_page():
 
         # Bar chart for Sex data comparison for State 2
         bar_chart_sex_2 = alt.Chart(sex_data_state_2).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics'),
+            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value:Q', title='Average %'),
             color='Stratification2:N',
@@ -126,11 +126,11 @@ def show_compare_states_page():
 
         # Bar chart for Race data comparison for State 1
         bar_chart_race_1 = alt.Chart(race_data_state_1).mark_bar().encode(
-        x=alt.X('Class', axis=alt.Axis(labelAngle=0),title='Topics'),
-        xOffset='Stratification2',
-        y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
-        color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
-        tooltip=['Class', 'Stratification2', 'Data_Value']
+            x=alt.X('Class', axis=alt.Axis(labelAngle=0, labelLimit=200),title='Topics'),
+            xOffset='Stratification2',
+            y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
+            color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
+            tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
             stroke=None,
         ).properties(
@@ -139,11 +139,11 @@ def show_compare_states_page():
 
         # Bar chart for Race data comparison for State 2
         bar_chart_race_2 = alt.Chart(race_data_state_2).mark_bar().encode(
-        x=alt.X('Class', axis=alt.Axis(labelAngle=0),title='Topics'),
-        xOffset='Stratification2',
-        y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
-        color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
-        tooltip=['Class', 'Stratification2', 'Data_Value']
+            x=alt.X('Class', axis=alt.Axis(labelAngle=0, labelLimit=200),title='Topics'),
+            xOffset='Stratification2',
+            y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
+            color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
+            tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
             stroke=None,
         ).properties(

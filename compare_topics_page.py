@@ -51,7 +51,7 @@ def show_compare_topics_page():
                 lookup='id',
                 from_=alt.LookupData(filtered_df, 'state_id', ['LocationDesc', 'Data_Value', 'Class'])
             ).properties(
-                title=f"Heatmap for: **{category}**"
+                title=f"Map for: **{category}**"
             )
             return base + heatmap
 
