@@ -3,6 +3,10 @@ import pandas as pd
 import streamlit as st
 
 def show_compare_states_page():
+
+    st.set_page_config(page_title='Compare Factors associated with Alzheimer Elders between States', 
+                       layout='wide')
+                       
     # Load datasets (adjust paths as necessary)
     sex_data = pd.read_csv('sex_averaged_df.csv')
     race_data = pd.read_csv('race_averaged_df.csv')
@@ -83,8 +87,6 @@ def show_compare_states_page():
             color='Class:N',
             tooltip=['Class', 'Data_Value']
         ).properties(
-            width=400,
-            height=300,
             title=f'Average % by Topic for {state_1}'
         )
 
@@ -95,8 +97,6 @@ def show_compare_states_page():
             color='Class:N',
             tooltip=['Class', 'Data_Value']
         ).properties(
-            width=400,
-            height=300,
             title=f'Average % by Topic for {state_2}'
         )
 
@@ -110,8 +110,6 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
-            width=400, 
-            height=300,
             title=f'Average % by Topic and Sex for {state_1}'
         )
 
@@ -125,13 +123,11 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
-            width=400, 
-            height=300,
             title=f'Average % by Topic and Sex for {state_2}'
         )
 
         # Bar chart for Race data comparison for State 1
-        bar_chart_race_1 = alt.Chart(race_data_state_2).mark_bar().encode(
+        bar_chart_race_1 = alt.Chart(race_data_state_1).mark_bar().encode(
         y=alt.Y('Class', axis=alt.Axis(labelAngle=90),title='Topics'),
         yOffset='Stratification2',
         x=alt.X('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
@@ -140,8 +136,6 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
-            width=400, 
-            height=300,
             title=f'Average % by Topic and Race for {state_1}'
         )
 
@@ -155,8 +149,6 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
-            width=400, 
-            height=300,
             title=f'Average % by Topic and Race for {state_2}'
         )
 
