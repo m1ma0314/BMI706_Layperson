@@ -1,0 +1,226 @@
+LocationDesc,Class,Data_Value,Column_Name
+Alabama,Caregiving,36.16133333333333,Alabama Caregiving Average%
+Alabama,Cognitive Decline,35.72833333333333,Alabama Cognitive Decline Average%
+Alabama,Mental Health,17.58,Alabama Mental Health Average%
+Alabama,Smoking and Alcohol Use,10.356666666666666,Alabama Smoking and Alcohol Use Average%
+Alaska,Caregiving,33.42,Alaska Caregiving Average%
+Alaska,Cognitive Decline,26.23125,Alaska Cognitive Decline Average%
+Alaska,Mental Health,12.803225806451612,Alaska Mental Health Average%
+Alaska,Smoking and Alcohol Use,14.4,Alaska Smoking and Alcohol Use Average%
+Arizona,Caregiving,34.46052631578947,Arizona Caregiving Average%
+Arizona,Cognitive Decline,26.63448275862069,Arizona Cognitive Decline Average%
+Arizona,Mental Health,15.563157894736841,Arizona Mental Health Average%
+Arizona,Smoking and Alcohol Use,10.920689655172414,Arizona Smoking and Alcohol Use Average%
+Arkansas,Caregiving,34.09710144927536,Arkansas Caregiving Average%
+Arkansas,Cognitive Decline,33.37708333333333,Arkansas Cognitive Decline Average%
+Arkansas,Mental Health,18.570967741935487,Arkansas Mental Health Average%
+Arkansas,Smoking and Alcohol Use,13.176666666666668,Arkansas Smoking and Alcohol Use Average%
+California,Caregiving,33.32394366197183,California Caregiving Average%
+California,Cognitive Decline,27.68860759493671,California Cognitive Decline Average%
+California,Mental Health,14.144736842105264,California Mental Health Average%
+California,Smoking and Alcohol Use,10.714705882352941,California Smoking and Alcohol Use Average%
+Colorado,Caregiving,32.736363636363635,Colorado Caregiving Average%
+Colorado,Cognitive Decline,28.637254901960784,Colorado Cognitive Decline Average%
+Colorado,Mental Health,14.06060606060606,Colorado Mental Health Average%
+Colorado,Smoking and Alcohol Use,10.670967741935485,Colorado Smoking and Alcohol Use Average%
+Connecticut,Caregiving,34.81805555555556,Connecticut Caregiving Average%
+Connecticut,Cognitive Decline,28.7027397260274,Connecticut Cognitive Decline Average%
+Connecticut,Mental Health,13.446875,Connecticut Mental Health Average%
+Connecticut,Smoking and Alcohol Use,11.3625,Connecticut Smoking and Alcohol Use Average%
+Delaware,Caregiving,32.58382352941176,Delaware Caregiving Average%
+Delaware,Cognitive Decline,25.24705882352941,Delaware Cognitive Decline Average%
+Delaware,Mental Health,13.386206896551723,Delaware Mental Health Average%
+Delaware,Smoking and Alcohol Use,10.751851851851852,Delaware Smoking and Alcohol Use Average%
+District of Columbia,Cognitive Decline,28.544736842105266,District of Columbia Cognitive Decline Average%
+District of Columbia,Mental Health,12.986666666666668,District of Columbia Mental Health Average%
+District of Columbia,Smoking and Alcohol Use,11.242857142857144,District of Columbia Smoking and Alcohol Use Average%
+Florida,Cognitive Decline,32.923595505617975,Florida Cognitive Decline Average%
+Florida,Mental Health,14.729411764705883,Florida Mental Health Average%
+Florida,Smoking and Alcohol Use,10.622222222222222,Florida Smoking and Alcohol Use Average%
+Georgia,Caregiving,35.669999999999995,Georgia Caregiving Average%
+Georgia,Cognitive Decline,33.12833333333334,Georgia Cognitive Decline Average%
+Georgia,Mental Health,14.7875,Georgia Mental Health Average%
+Georgia,Smoking and Alcohol Use,10.382758620689655,Georgia Smoking and Alcohol Use Average%
+Guam,Mental Health,9.341666666666667,Guam Mental Health Average%
+Guam,Smoking and Alcohol Use,22.52777777777778,Guam Smoking and Alcohol Use Average%
+Hawaii,Caregiving,33.631645569620254,Hawaii Caregiving Average%
+Hawaii,Cognitive Decline,25.586206896551722,Hawaii Cognitive Decline Average%
+Hawaii,Mental Health,11.185294117647059,Hawaii Mental Health Average%
+Hawaii,Smoking and Alcohol Use,10.200000000000001,Hawaii Smoking and Alcohol Use Average%
+Idaho,Caregiving,33.0,Idaho Caregiving Average%
+Idaho,Cognitive Decline,28.043529411764705,Idaho Cognitive Decline Average%
+Idaho,Mental Health,14.210714285714285,Idaho Mental Health Average%
+Idaho,Smoking and Alcohol Use,11.192307692307692,Idaho Smoking and Alcohol Use Average%
+Illinois,Caregiving,33.55081967213115,Illinois Caregiving Average%
+Illinois,Cognitive Decline,29.476923076923075,Illinois Cognitive Decline Average%
+Illinois,Mental Health,12.378124999999999,Illinois Mental Health Average%
+Illinois,Smoking and Alcohol Use,11.19375,Illinois Smoking and Alcohol Use Average%
+Indiana,Caregiving,33.51842105263158,Indiana Caregiving Average%
+Indiana,Cognitive Decline,32.04130434782609,Indiana Cognitive Decline Average%
+Indiana,Mental Health,15.584848484848484,Indiana Mental Health Average%
+Indiana,Smoking and Alcohol Use,13.603125,Indiana Smoking and Alcohol Use Average%
+Iowa,Caregiving,30.239682539682537,Iowa Caregiving Average%
+Iowa,Cognitive Decline,28.410526315789472,Iowa Cognitive Decline Average%
+Iowa,Mental Health,12.053571428571429,Iowa Mental Health Average%
+Iowa,Smoking and Alcohol Use,13.4,Iowa Smoking and Alcohol Use Average%
+Kansas,Caregiving,32.3235294117647,Kansas Caregiving Average%
+Kansas,Cognitive Decline,29.008333333333336,Kansas Cognitive Decline Average%
+Kansas,Mental Health,12.776666666666667,Kansas Mental Health Average%
+Kansas,Smoking and Alcohol Use,14.12258064516129,Kansas Smoking and Alcohol Use Average%
+Kentucky,Caregiving,36.1953125,Kentucky Caregiving Average%
+Kentucky,Cognitive Decline,33.471739130434784,Kentucky Cognitive Decline Average%
+Kentucky,Mental Health,17.775000000000002,Kentucky Mental Health Average%
+Kentucky,Smoking and Alcohol Use,15.104000000000001,Kentucky Smoking and Alcohol Use Average%
+Louisiana,Caregiving,34.70840336134454,Louisiana Caregiving Average%
+Louisiana,Cognitive Decline,36.80185185185185,Louisiana Cognitive Decline Average%
+Louisiana,Mental Health,19.95625,Louisiana Mental Health Average%
+Louisiana,Smoking and Alcohol Use,13.81,Louisiana Smoking and Alcohol Use Average%
+Maine,Caregiving,33.88333333333333,Maine Caregiving Average%
+Maine,Cognitive Decline,30.50357142857143,Maine Cognitive Decline Average%
+Maine,Mental Health,17.026923076923076,Maine Mental Health Average%
+Maine,Smoking and Alcohol Use,11.4125,Maine Smoking and Alcohol Use Average%
+Maryland,Caregiving,35.03896103896104,Maryland Caregiving Average%
+Maryland,Cognitive Decline,25.88490566037736,Maryland Cognitive Decline Average%
+Maryland,Mental Health,12.566666666666666,Maryland Mental Health Average%
+Maryland,Smoking and Alcohol Use,8.448387096774193,Maryland Smoking and Alcohol Use Average%
+Massachusetts,Caregiving,31.973333333333336,Massachusetts Caregiving Average%
+Massachusetts,Mental Health,15.203030303030303,Massachusetts Mental Health Average%
+Massachusetts,Smoking and Alcohol Use,10.526666666666667,Massachusetts Smoking and Alcohol Use Average%
+Michigan,Caregiving,34.667741935483875,Michigan Caregiving Average%
+Michigan,Cognitive Decline,31.32087912087912,Michigan Cognitive Decline Average%
+Michigan,Mental Health,16.0875,Michigan Mental Health Average%
+Michigan,Smoking and Alcohol Use,13.179310344827586,Michigan Smoking and Alcohol Use Average%
+Midwest,Caregiving,33.100833333333334,Midwest Caregiving Average%
+Midwest,Cognitive Decline,36.0796875,Midwest Cognitive Decline Average%
+Midwest,Mental Health,14.932558139534883,Midwest Mental Health Average%
+Midwest,Smoking and Alcohol Use,14.024390243902438,Midwest Smoking and Alcohol Use Average%
+Minnesota,Caregiving,31.142647058823528,Minnesota Caregiving Average%
+Minnesota,Cognitive Decline,25.363265306122447,Minnesota Cognitive Decline Average%
+Minnesota,Mental Health,14.681818181818182,Minnesota Mental Health Average%
+Minnesota,Smoking and Alcohol Use,14.361290322580645,Minnesota Smoking and Alcohol Use Average%
+Mississippi,Caregiving,34.45897435897436,Mississippi Caregiving Average%
+Mississippi,Cognitive Decline,38.20166666666667,Mississippi Cognitive Decline Average%
+Mississippi,Mental Health,15.103333333333333,Mississippi Mental Health Average%
+Mississippi,Smoking and Alcohol Use,13.314285714285715,Mississippi Smoking and Alcohol Use Average%
+Missouri,Caregiving,33.278260869565216,Missouri Caregiving Average%
+Missouri,Cognitive Decline,30.171999999999997,Missouri Cognitive Decline Average%
+Missouri,Mental Health,15.093333333333334,Missouri Mental Health Average%
+Missouri,Smoking and Alcohol Use,12.689655172413794,Missouri Smoking and Alcohol Use Average%
+Montana,Mental Health,17.177419354838708,Montana Mental Health Average%
+Montana,Smoking and Alcohol Use,14.727586206896552,Montana Smoking and Alcohol Use Average%
+Nebraska,Caregiving,31.201666666666664,Nebraska Caregiving Average%
+Nebraska,Cognitive Decline,28.568749999999998,Nebraska Cognitive Decline Average%
+Nebraska,Mental Health,10.874074074074075,Nebraska Mental Health Average%
+Nebraska,Smoking and Alcohol Use,12.942857142857141,Nebraska Smoking and Alcohol Use Average%
+Nevada,Caregiving,34.25,Nevada Caregiving Average%
+Nevada,Cognitive Decline,28.359302325581396,Nevada Cognitive Decline Average%
+Nevada,Mental Health,14.844827586206897,Nevada Mental Health Average%
+Nevada,Smoking and Alcohol Use,13.185185185185185,Nevada Smoking and Alcohol Use Average%
+New Hampshire,Caregiving,32.967619047619046,New Hampshire Caregiving Average%
+New Hampshire,Cognitive Decline,28.065217391304348,New Hampshire Cognitive Decline Average%
+New Hampshire,Mental Health,14.770833333333334,New Hampshire Mental Health Average%
+New Hampshire,Smoking and Alcohol Use,10.720833333333333,New Hampshire Smoking and Alcohol Use Average%
+New Jersey,Caregiving,32.42470588235294,New Jersey Caregiving Average%
+New Jersey,Mental Health,12.547222222222222,New Jersey Mental Health Average%
+New Jersey,Smoking and Alcohol Use,10.240625,New Jersey Smoking and Alcohol Use Average%
+New Mexico,Caregiving,36.05555555555556,New Mexico Caregiving Average%
+New Mexico,Cognitive Decline,36.21935483870968,New Mexico Cognitive Decline Average%
+New Mexico,Mental Health,15.50909090909091,New Mexico Mental Health Average%
+New Mexico,Smoking and Alcohol Use,11.31,New Mexico Smoking and Alcohol Use Average%
+New York,Caregiving,32.35064935064935,New York Caregiving Average%
+New York,Cognitive Decline,31.77704918032787,New York Cognitive Decline Average%
+New York,Mental Health,13.964102564102564,New York Mental Health Average%
+New York,Smoking and Alcohol Use,10.457142857142857,New York Smoking and Alcohol Use Average%
+North Carolina,Caregiving,35.400000000000006,North Carolina Caregiving Average%
+North Carolina,Cognitive Decline,32.28913043478261,North Carolina Cognitive Decline Average%
+North Carolina,Mental Health,14.935483870967742,North Carolina Mental Health Average%
+North Carolina,Smoking and Alcohol Use,11.241379310344827,North Carolina Smoking and Alcohol Use Average%
+North Dakota,Caregiving,31.392063492063492,North Dakota Caregiving Average%
+North Dakota,Cognitive Decline,20.462790697674418,North Dakota Cognitive Decline Average%
+North Dakota,Mental Health,12.524000000000001,North Dakota Mental Health Average%
+North Dakota,Smoking and Alcohol Use,14.1,North Dakota Smoking and Alcohol Use Average%
+Northeast,Caregiving,34.74333333333333,Northeast Caregiving Average%
+Northeast,Cognitive Decline,35.38697916666667,Northeast Cognitive Decline Average%
+Northeast,Mental Health,13.666666666666666,Northeast Mental Health Average%
+Northeast,Smoking and Alcohol Use,10.539024390243902,Northeast Smoking and Alcohol Use Average%
+Ohio,Caregiving,33.32100840336134,Ohio Caregiving Average%
+Ohio,Cognitive Decline,32.575257731958764,Ohio Cognitive Decline Average%
+Ohio,Mental Health,16.733333333333334,Ohio Mental Health Average%
+Ohio,Smoking and Alcohol Use,15.029032258064515,Ohio Smoking and Alcohol Use Average%
+Oklahoma,Caregiving,33.384466019417474,Oklahoma Caregiving Average%
+Oklahoma,Cognitive Decline,31.2622641509434,Oklahoma Cognitive Decline Average%
+Oklahoma,Mental Health,19.16764705882353,Oklahoma Mental Health Average%
+Oklahoma,Smoking and Alcohol Use,12.70625,Oklahoma Smoking and Alcohol Use Average%
+Oregon,Caregiving,35.68796296296296,Oregon Caregiving Average%
+Oregon,Cognitive Decline,28.06125,Oregon Cognitive Decline Average%
+Oregon,Mental Health,16.642857142857142,Oregon Mental Health Average%
+Oregon,Smoking and Alcohol Use,12.055555555555555,Oregon Smoking and Alcohol Use Average%
+Pennsylvania,Caregiving,37.457281553398055,Pennsylvania Caregiving Average%
+Pennsylvania,Cognitive Decline,30.813725490196077,Pennsylvania Cognitive Decline Average%
+Pennsylvania,Mental Health,14.110344827586207,Pennsylvania Mental Health Average%
+Pennsylvania,Smoking and Alcohol Use,12.915384615384616,Pennsylvania Smoking and Alcohol Use Average%
+Puerto Rico,Caregiving,38.740404040404044,Puerto Rico Caregiving Average%
+Puerto Rico,Cognitive Decline,42.84074074074074,Puerto Rico Cognitive Decline Average%
+Puerto Rico,Mental Health,18.091666666666665,Puerto Rico Mental Health Average%
+Puerto Rico,Smoking and Alcohol Use,9.691304347826087,Puerto Rico Smoking and Alcohol Use Average%
+Rhode Island,Caregiving,31.422727272727276,Rhode Island Caregiving Average%
+Rhode Island,Cognitive Decline,33.35116279069767,Rhode Island Cognitive Decline Average%
+Rhode Island,Mental Health,15.79,Rhode Island Mental Health Average%
+Rhode Island,Smoking and Alcohol Use,11.424999999999999,Rhode Island Smoking and Alcohol Use Average%
+South,Caregiving,35.248333333333335,South Caregiving Average%
+South,Cognitive Decline,34.65208333333333,South Cognitive Decline Average%
+South,Mental Health,15.853333333333333,South Mental Health Average%
+South,Smoking and Alcohol Use,11.838095238095239,South Smoking and Alcohol Use Average%
+South Carolina,Caregiving,35.29350649350649,South Carolina Caregiving Average%
+South Carolina,Cognitive Decline,32.659375000000004,South Carolina Cognitive Decline Average%
+South Carolina,Mental Health,14.623333333333333,South Carolina Mental Health Average%
+South Carolina,Smoking and Alcohol Use,12.416666666666666,South Carolina Smoking and Alcohol Use Average%
+South Dakota,Caregiving,33.669841269841264,South Dakota Caregiving Average%
+South Dakota,Cognitive Decline,25.520000000000003,South Dakota Cognitive Decline Average%
+South Dakota,Mental Health,13.481818181818182,South Dakota Mental Health Average%
+South Dakota,Smoking and Alcohol Use,14.873076923076923,South Dakota Smoking and Alcohol Use Average%
+Tennessee,Cognitive Decline,36.36551724137931,Tennessee Cognitive Decline Average%
+Tennessee,Mental Health,19.082758620689653,Tennessee Mental Health Average%
+Tennessee,Smoking and Alcohol Use,13.339285714285714,Tennessee Smoking and Alcohol Use Average%
+Texas,Caregiving,34.61529411764706,Texas Caregiving Average%
+Texas,Cognitive Decline,36.13472222222222,Texas Cognitive Decline Average%
+Texas,Mental Health,14.863888888888889,Texas Mental Health Average%
+Texas,Smoking and Alcohol Use,10.3,Texas Smoking and Alcohol Use Average%
+"United States, DC & Territories",Caregiving,34.937916666666666,"United States, DC & Territories Caregiving Average%"
+"United States, DC & Territories",Cognitive Decline,33.57395833333333,"United States, DC & Territories Cognitive Decline Average%"
+"United States, DC & Territories",Mental Health,14.516666666666666,"United States, DC & Territories Mental Health Average%"
+"United States, DC & Territories",Smoking and Alcohol Use,11.302127659574468,"United States, DC & Territories Smoking and Alcohol Use Average%"
+Utah,Caregiving,32.13181818181818,Utah Caregiving Average%
+Utah,Cognitive Decline,29.0020202020202,Utah Cognitive Decline Average%
+Utah,Mental Health,15.007142857142856,Utah Mental Health Average%
+Utah,Smoking and Alcohol Use,6.311111111111111,Utah Smoking and Alcohol Use Average%
+Vermont,Caregiving,32.28666666666667,Vermont Caregiving Average%
+Vermont,Cognitive Decline,28.83809523809524,Vermont Cognitive Decline Average%
+Vermont,Mental Health,15.7125,Vermont Mental Health Average%
+Vermont,Smoking and Alcohol Use,11.487499999999999,Vermont Smoking and Alcohol Use Average%
+Virgin Islands,Mental Health,6.4,Virgin Islands Mental Health Average%
+Virgin Islands,Smoking and Alcohol Use,3.8499999999999996,Virgin Islands Smoking and Alcohol Use Average%
+Virginia,Caregiving,35.498360655737706,Virginia Caregiving Average%
+Virginia,Cognitive Decline,29.155140186915887,Virginia Cognitive Decline Average%
+Virginia,Mental Health,13.85,Virginia Mental Health Average%
+Virginia,Smoking and Alcohol Use,10.733333333333333,Virginia Smoking and Alcohol Use Average%
+Washington,Caregiving,32.5044776119403,Washington Caregiving Average%
+Washington,Cognitive Decline,29.48,Washington Cognitive Decline Average%
+Washington,Mental Health,15.582222222222223,Washington Mental Health Average%
+Washington,Smoking and Alcohol Use,11.246153846153847,Washington Smoking and Alcohol Use Average%
+West,Caregiving,34.8175,West Caregiving Average%
+West,Cognitive Decline,31.29114583333333,West Cognitive Decline Average%
+West,Mental Health,14.05625,West Mental Health Average%
+West,Smoking and Alcohol Use,11.075000000000001,West Smoking and Alcohol Use Average%
+West Virginia,Caregiving,35.583333333333336,West Virginia Caregiving Average%
+West Virginia,Cognitive Decline,35.7125,West Virginia Cognitive Decline Average%
+West Virginia,Mental Health,19.908333333333335,West Virginia Mental Health Average%
+West Virginia,Smoking and Alcohol Use,13.8125,West Virginia Smoking and Alcohol Use Average%
+Wisconsin,Caregiving,33.07678571428571,Wisconsin Caregiving Average%
+Wisconsin,Cognitive Decline,28.045348837209303,Wisconsin Cognitive Decline Average%
+Wisconsin,Mental Health,15.061764705882354,Wisconsin Mental Health Average%
+Wisconsin,Smoking and Alcohol Use,14.141379310344828,Wisconsin Smoking and Alcohol Use Average%
+Wyoming,Caregiving,31.38360655737705,Wyoming Caregiving Average%
+Wyoming,Cognitive Decline,25.322499999999998,Wyoming Cognitive Decline Average%
+Wyoming,Mental Health,14.029166666666667,Wyoming Mental Health Average%
+Wyoming,Smoking and Alcohol Use,12.391666666666666,Wyoming Smoking and Alcohol Use Average%
