@@ -9,9 +9,9 @@ import compare_states_page
 st.set_page_config(page_title='Test', 
                        layout='wide',
                        menu_items={
-        'Github Page': 'https://github.com/m1ma0314/BMI706_Layperson/blob/main/README.md',
-        'About': "Hi! Welcome to our page for `Alzheimer Visualier`. "
-    })
+                        'Get help': 'https://github.com/m1ma0314/BMI706_Layperson/blob/main/README.md',
+                        'About': "Hi! Welcome to our page for `Alzheimer Visualier`. "
+                    })
 
 # Set up navigation with a sidebar
 # with st.sidebar:
