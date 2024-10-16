@@ -41,7 +41,7 @@ def show_overall_page():
         color=prevalence_color,
         tooltip=[alt.Tooltip('state:N', title='State'),
                 alt.Tooltip('Percent:Q', title="Prevalence (%)"),
-                alt.Tooltip('Count:Q', title="Count")]  # Added tooltip
+                alt.Tooltip('Count:Q', title="Count")]  
     ).transform_lookup(
         lookup='id',
         from_=alt.LookupData(df_prevalence, 'id', ['state', 'Percent', 'Count'])
@@ -92,10 +92,17 @@ def show_overall_page():
         background + prevalence_map + selected_outline
     ).resolve_scale(
         color='independent'
-    ).properties(
-        padding={"left": 10, "right": 10, "top": 10, "bottom": 10}
+    )
+    
+    prevalence_chart = alt.hconcat(
+        ranking_chart.properties(width=250),  
+        (background + prevalence_map + selected_outline).properties(width=500) 
+    ).resolve_scale(
+        color='independent'
     )
 
-    #st.markdown("<div class='center-content'>", unsafe_allow_html=True)
+    # Use container width for centering and full width layout
     st.altair_chart(prevalence_chart, use_container_width=True)
+    #st.markdown("<div class='center-content'>", unsafe_allow_html=True)
+    #st.altair_chart(prevalence_chart, use_container_width=True)
     #st.markdown("</div>", unsafe_allow_html=True)
