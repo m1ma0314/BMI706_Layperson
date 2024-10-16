@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 import overall_page
 import compare_topics_page
 import compare_states_page
+import about_page
 
 st.set_page_config(page_title='Test', 
                        layout='wide',
@@ -95,3 +96,6 @@ elif selected == "Compare Topics":
 
 elif selected == "Compare States":
     compare_states_page.show_compare_states_page()
+
+elif selected == "About":
+    about_page.show_about_page()
