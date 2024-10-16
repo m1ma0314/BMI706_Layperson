@@ -6,6 +6,9 @@ import overall_page
 import compare_topics_page
 import compare_states_page
 
+st.set_page_config(page_title='Test', 
+                       layout='wide')
+
 # Set up navigation with a sidebar
 # with st.sidebar:
 #     selected = option_menu(
@@ -87,6 +90,4 @@ elif selected == "Compare Topics":
     compare_topics_page.show_compare_topics_page()
 
 elif selected == "Compare States":
-    st.set_page_config(page_title='Compare Factors associated with Alzheimer Elders between States', 
-                       layout='wide')
     compare_states_page.show_compare_states_page()
