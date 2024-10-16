@@ -49,7 +49,8 @@ def show_overall_page():
     ).transform_filter(
         selector
     ).project('albersUsa').properties(
-        height=300, 
+        width=300, 
+        height=250, 
         title="Alzheimer's Prevalence Across U.S. States in 2022"
     )
 
@@ -60,7 +61,8 @@ def show_overall_page():
     ).transform_filter(
         selector  
     ).project('albersUsa').properties(
-        height=300
+        width=300,
+        height=250
     )
 
     top_10 = df_prevalence.nlargest(10, 'Count')
@@ -80,7 +82,7 @@ def show_overall_page():
         selector
     ).properties(
         width=130,  
-        height=300, 
+        height=250, 
         title="Top 10 States by Number of People"
     )
 
