@@ -94,12 +94,22 @@ def show_overall_page():
         color='independent'
     )
     
-    prevalence_chart = alt.hconcat(
-        ranking_chart.properties(width=250),  
-        (background + prevalence_map + selected_outline).properties(width=500) 
-    ).resolve_scale(
-        color='independent'
-    )
+    #prevalence_chart = alt.hconcat(
+    #    ranking_chart.properties(height=0),  
+    #    (background + prevalence_map + selected_outline).properties(width=500) 
+    #).resolve_scale(
+    #    color='independent'
+    #)
+
+    col1, col2 = st.columns([1, 1.5])  # Adjust the ratio (1:1.5 means col2 is wider)
+
+    # Display bar chart in the first column (40% width)
+    with col1:
+        st.altair_chart(ranking_chart, use_container_width=True)
+
+    # Display map in the second column (60% width)
+    with col2:
+        st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
 
     # Use container width for centering and full width layout
     st.altair_chart(prevalence_chart, use_container_width=True)
