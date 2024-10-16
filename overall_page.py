@@ -76,12 +76,6 @@ def show_overall_page():
     # Layout for map and top 10 bar chart
     col1, col2 = st.columns([1, 1.5])
 
-    with col1:
-        st.altair_chart(ranking_chart, use_container_width=True)
-
-    with col2:
-        st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
-
     # Now we integrate the other chart with Alzheimer's data and discussions
     # Assuming df has been loaded and cleaned as per your existing code
     df = pd.read_csv('averaged_4topics.csv')
@@ -138,6 +132,12 @@ def show_overall_page():
         height=400,
         title="State-Level Engagement in Selected Topic"
     )
+
+    with col1:
+        st.altair_chart(ranking_chart, use_container_width=True)
+
+    with col2:
+        st.altair_chart(background + prevalence_map + selected_outline, use_container_width=True)
 
     # Combine the two charts into a linked view
     st.altair_chart(alt.vconcat(grouped_bar, state_bar), use_container_width=True)
