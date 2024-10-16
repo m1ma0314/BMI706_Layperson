@@ -108,7 +108,11 @@ def show_overall_page():
     grouped_bar = alt.Chart(df_aggregated_region).mark_bar().encode(
         x=alt.X('Region:N', title='Region', axis=alt.Axis(labelAngle=0)),  
         y=alt.Y('Data_Value:Q', title='Avg. Engagement (%)', scale=alt.Scale(domain=[0, 50])),
-        color=alt.Color('Class:N', title='Discussion Topic'), 
+        color=alt.condition(
+        topic_selection,  
+        alt.Color('Class:N', title='Discussion Topic'),  
+        alt.value('lightgray')  
+    ),
         xOffset=alt.XOffset('Class:N'),  
         tooltip=[alt.Tooltip('Region:N'), alt.Tooltip('Class:N', title='Topic'), alt.Tooltip('Data_Value:Q', title='Avg. Engagement (%)')]
     ).add_params(
@@ -151,5 +155,4 @@ def show_overall_page():
 
     # Combine the two charts into a linked view
     st.altair_chart(alt.vconcat(grouped_bar, state_bar), use_container_width=True)
-
 
