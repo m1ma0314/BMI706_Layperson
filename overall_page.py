@@ -7,6 +7,17 @@ df_prevalence = pd.read_csv('prevalence_df.csv')
 df_prevalence['Count'] = df_prevalence['Number (in thousands)'] * 1000
 
 def show_overall_page():
+    st.markdown(
+        """
+        <style>
+        .center-content {
+            display: flex;
+            justify-content: center;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
     st.markdown("<h1 style='text-align: center;'>Overview of Alzheimer's Prevalence Across the U.S.</h1>", unsafe_allow_html=True)
 
@@ -14,14 +25,14 @@ def show_overall_page():
 
     selector = alt.selection_point(fields=['state'], name='Select')
 
-    #col1, col2 = st.columns(2)
     background = alt.Chart(states).mark_geoshape(
         fill='lightgray',
         stroke='white'
-    ).project('albersUsa').properties(
-        width=300, 
-        height=250  
     )
+    #.project('albersUsa').properties(
+        #width=300, 
+        #height=250  
+    #)
 
     prevalence_scale = alt.Scale(domain=[df_prevalence['Percent'].min(), df_prevalence['Percent'].max()], scheme='oranges')
     prevalence_color = alt.Color(field="Percent", type="quantitative", scale=prevalence_scale, title="Alzheimer's Prevalence (%)")
@@ -39,8 +50,8 @@ def show_overall_page():
     ).transform_filter(
         selector
     ).project('albersUsa').properties(
-        width=300, 
-        height=250, 
+        #width=300, 
+        #height=250, 
         title="Alzheimer's Prevalence Across U.S. States in 2022"
     )
 
@@ -50,10 +61,10 @@ def show_overall_page():
         strokeWidth=2
     ).transform_filter(
         selector  
-    ).project('albersUsa').properties(
-        width=300,
-        height=250
-    )
+    )#.project('albersUsa').properties(
+        #width=300,
+        #height=250
+    #)
 
     top_10 = df_prevalence.nlargest(10, 'Count')
 
@@ -71,8 +82,8 @@ def show_overall_page():
     ).add_params(
         selector
     ).properties(
-        width=130,  
-        height=250, 
+        #width=130,  
+        #height=250, 
         title="Top 10 States by Number of People"
     )
 
@@ -83,7 +94,6 @@ def show_overall_page():
         color='independent'
     )
 
+    st.markdown("<div class='center-content'>", unsafe_allow_html=True)
     st.altair_chart(prevalence_chart, use_container_width=True)
-
-
-show_overall_page()
+    st.markdown("</div>", unsafe_allow_html=True)
