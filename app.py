@@ -9,17 +9,31 @@ import compare_states_page
 # Set up navigation with a sidebar
 with st.sidebar:
     selected = option_menu(
-        "Main Menu", ["Overall", "Compare Topics", "Compare States"],
+        "Main Menu", 
+        ["Overall", "Compare Topics", "Compare States"],
         icons=['people-fill', 'capsule', 'bar-chart'],
         menu_icon="cast", default_index=0,
+        styles={
+            "icon": {"color": "orange", "font-size": "25px"}, 
+            "nav-link": {
+                "font-size": "16px", 
+                "text-align": "left", 
+                "margin": "0px", 
+                "--hover-color": "#6a0dad",  # Purple on hover
+            },
+            "nav-link-selected": {
+                "background-color": "#6a0dad",  # Purple when selected
+                "color": "white"
+            },
+        }
     )
 
 # Page navigation logic
 if selected == "Overall":
-    overall_page.show_overall_page()  
+    overall_page.show_overall_page()
 
 elif selected == "Compare Topics":
-    compare_topics_page.show_compare_topics_page()  
+    compare_topics_page.show_compare_topics_page()
 
 elif selected == "Compare States":
-    compare_states_page.show_compare_states_page()  
+    compare_states_page.show_compare_states_page()
