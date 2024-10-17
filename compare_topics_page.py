@@ -4,7 +4,7 @@ import altair as alt
 from vega_datasets import data
 
 def show_compare_topics_page():
-    file_path = 'averaged_4topics.csv'
+    file_path = 'data/averaged_4topics.csv'
 
     df = pd.read_csv(file_path)
 
