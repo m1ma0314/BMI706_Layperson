@@ -115,13 +115,18 @@ def show_compare_states_page():
             title=f'Percentage of Elders with Concerns by Sex for {state_2}'
         )
 
+        color_scale = alt.Scale(
+            domain=['Native Am/Alaskan Native', 'Asian/Pacific Islander', 'Black, non-Hispanic', 'White, non-Hispanic', 'Hispanic'],
+            range=['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']  
+        )
+
         # Bar chart for Race data comparison for State 1
         bar_chart_race_1 = alt.Chart(race_data_state_1).mark_bar().encode(
             x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, 
                     labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Percentage of Elders %'),
-            color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
+            color=alt.Color('Stratification2', scale=color_scale, legend=alt.Legend(orient='top')),
             tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
             stroke=None,
@@ -135,7 +140,7 @@ def show_compare_states_page():
                     labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Percentage of Elders %'),
-            color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
+            color=alt.Color('Stratification2', scale=color_scale, legend=alt.Legend(orient='top')),
             tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
             stroke=None,
