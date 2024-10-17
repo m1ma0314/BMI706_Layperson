@@ -7,13 +7,13 @@ def show_about_page():
     ## Alzheimer's Disease Data Visualization App
     
     This app provides insights into the prevalence of Alzheimer's disease across the U.S., 
-    along with health-related factors that may be associated with Alzheimer's disease.
+    along with self-reported concerns among Alzheimer's elders.
     
     ### Pages Overview:
     
-    - **Overall:** Presents an overview of Alzheimer's disease prevalence across U.S. states and health-related factors among different regions
-    - **Compare Topics:** Allows users to compare various health-related factors between different topics (smoking, cognitive decline, mental health, caregiving).
-    - **Compare States:** Provides the ability to compare specific factors across two U.S. states.
+    - **Overall:** Presents an overview of Alzheimer's disease prevalence across U.S. states and self-reported related concerns and behaviors by regions
+    - **Compare Topics:** Allows users to compare various concerns related to Alzheimer's disease across the U.S. states
+    - **Compare States:** Provides the ability to compare demographics related to the concerns across two U.S. states.
     
     ### Data Source:
     
