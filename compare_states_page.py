@@ -118,7 +118,7 @@ def show_compare_states_page():
             x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, 
                     labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
-            y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
+            y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Percentage of Elders %'),
             color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
             tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
@@ -132,7 +132,7 @@ def show_compare_states_page():
             x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, 
                     labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
-            y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
+            y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Percentage of Elders %'),
             color=alt.Color('Stratification2', legend=alt.Legend(orient='top')),
             tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
