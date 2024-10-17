@@ -153,7 +153,7 @@ def show_overall_page():
     ).properties(
         width=1000, 
         height=400,
-        title="State-Level Selected Self-Reported Concern Related to Alzheimer's Disease"
+        title="State-Level Self-Reported Concern Related to Alzheimer's Disease"
     )
 
     # Combine the two charts into a linked view
