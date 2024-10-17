@@ -40,7 +40,7 @@ df_aggregated_region, df_aggregated_state = load_engagement_data()
 # Alzheimer's prevalence page
 def show_overall_page():
 
-    st.title("Overview of Alzheimer's Prevalence Across the U.S.")   
+    st.title("Overview of Alzheimer's Prevalence Across the U.S. and Self-Reported Related Concerns and Behaviors by Regions")   
 
     states = alt.topo_feature(data.us_10m.url, feature='states')
 
@@ -68,7 +68,7 @@ def show_overall_page():
     ).transform_filter(
         selector
     ).project('albersUsa').properties(
-        title="Alzheimer's Prevalence Across U.S. States in 2022"
+        title="Alzheimer's Prevalence Across U.S. States"
     )
 
     # Highlight the selected state
@@ -117,20 +117,21 @@ def show_overall_page():
 
     grouped_bar = alt.Chart(df_aggregated_region).mark_bar().encode(
         x=alt.X('Region:N', title='Region', axis=alt.Axis(labelAngle=0)),  
-        y=alt.Y('Data_Value:Q', title='Avg. Engagement (%)', scale=alt.Scale(domain=[0, 50])),
+        y=alt.Y('Data_Value:Q', title='Percentage of Elders with the Concern(%)', scale=alt.Scale(domain=[0, 50])),
         color=alt.condition(
         topic_selection,  
-        alt.Color('Class:N', title='Discussion Topic'),  
+        alt.Color('Class:N', title='Type of Concern'),  
         alt.value('lightgray')  
     ),
         xOffset=alt.XOffset('Class:N'),  
-        tooltip=[alt.Tooltip('Region:N'), alt.Tooltip('Class:N', title='Topic'), alt.Tooltip('Data_Value:Q', title='Avg. Engagement (%)')]
+        tooltip=[alt.Tooltip('Region:N'), alt.Tooltip('Class:N', title='Type of Concern'), 
+                 alt.Tooltip('Data_Value:Q', title='Percentage of Elders with the Concern(%)')]
     ).add_params(
         topic_selection  
     ).properties(
         width=400,  
         height=400,
-        title="Grouped Bar Chart of Topic Engagement by Region"
+        title="Regional Self-Reported Concerns Related to Alzheimer's Disease"
     )
 
     # State-level bar chart for selected topic
@@ -142,17 +143,17 @@ def show_overall_page():
                             labelFontSize=12,  
                             labelOverlap=False)  
         ),  
-        y=alt.Y('Data_Value:Q', title='Avg. Engagement (%)', scale=alt.Scale(domain=[0, 50]), stack=None), 
-        color=alt.Color('Class:N', title='Discussion Topic'),  
+        y=alt.Y('Data_Value:Q', title='Percentage of Elders with the Concern(%)', scale=alt.Scale(domain=[0, 50]), stack=None), 
+        color=alt.Color('Class:N', title='Type of Concern'),  
         tooltip=[alt.Tooltip('LocationDesc:N', title='State'), 
-                alt.Tooltip('Class:N', title='Topic'), 
-                alt.Tooltip('Data_Value:Q', title='Avg. Engagement (%)')]
+                alt.Tooltip('Class:N', title='Type of Concern'), 
+                alt.Tooltip('Data_Value:Q', title='Percentage of Elders with the Concern(%)')]
     ).transform_filter(
         topic_selection  
     ).properties(
         width=1000, 
         height=400,
-        title="State-Level Engagement in Selected Topic"
+        title="State-Level Selected Self-Reported Concern Related to Alzheimer's Disease"
     )
 
     # Combine the two charts into a linked view
