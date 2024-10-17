@@ -11,7 +11,7 @@ def show_about_page():
     
     ### Pages Overview:
     
-    - **Overall:** Presents an overview of Alzheimer's disease prevalence across U.S. states and self-reported related concerns and behaviors by regions
+    - **Overall:** Presents an overview of Alzheimer's disease prevalence across U.S. states and self reported concerns and behaviors related to Alzheimer's across different regions in the U.S.
     - **Compare Topics:** Allows users to compare various concerns related to Alzheimer's disease across the U.S. states
     - **Compare States:** Provides the ability to compare demographics related to the concerns across two U.S. states.
     
