@@ -69,7 +69,7 @@ def show_compare_states_page():
 
         # Bar chart for overall comparison for State 1
         bar_chart_state_1 = alt.Chart(overall_data_1).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
+            x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Class:N',
             tooltip=['Class', 'Data_Value']
@@ -79,7 +79,7 @@ def show_compare_states_page():
 
         # Bar chart for overall comparison for State 2
         bar_chart_state_2 = alt.Chart(overall_data_2).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
+            x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Class:N',
             tooltip=['Class', 'Data_Value']
@@ -89,7 +89,7 @@ def show_compare_states_page():
 
         # Bar chart for Sex data comparison for State 1
         bar_chart_sex_1 = alt.Chart(sex_data_state_1).mark_bar(size=30).encode(
-            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
+            x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Stratification2:N',
@@ -102,7 +102,7 @@ def show_compare_states_page():
 
         # Bar chart for Sex data comparison for State 2
         bar_chart_sex_2 = alt.Chart(sex_data_state_2).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
+            x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Stratification2:N',
@@ -115,7 +115,7 @@ def show_compare_states_page():
 
         # Bar chart for Race data comparison for State 1
         bar_chart_race_1 = alt.Chart(race_data_state_1).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, 
+            x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, 
                     labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
@@ -129,7 +129,7 @@ def show_compare_states_page():
 
         # Bar chart for Race data comparison for State 2
         bar_chart_race_2 = alt.Chart(race_data_state_2).mark_bar().encode(
-            x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, 
+            x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, 
                     labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value', axis=alt.Axis(grid=False), title='Average %'),
