@@ -4,7 +4,7 @@
 ---
 Hi! Welcome to our GitHub page for `Alzheimer Visualier`. 
 
-Here you can find our streamlit app 👉: [LINK TO BE ADDED]
+Here you can find our streamlit app 👉: https://bmi706layperson-alzheimer-visualizer.streamlit.app/
 
 
 ---
