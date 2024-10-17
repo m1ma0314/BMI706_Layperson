@@ -117,7 +117,7 @@ def show_compare_states_page():
 
         color_scale = alt.Scale(
             domain=['Native Am/Alaskan Native', 'Asian/Pacific Islander', 'Black, non-Hispanic', 'White, non-Hispanic', 'Hispanic'],
-            range=['#1f77b4', '#6baed6', '#e377c2', '#ff9896', '#ff7f0e']  
+            range=['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f']  
         )
 
         # Bar chart for Race data comparison for State 1
