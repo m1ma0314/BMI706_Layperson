@@ -5,42 +5,33 @@ import streamlit as st
 
 def show_compare_states_page():
                        
-    # Load datasets (adjust paths as necessary)
-    sex_data = pd.read_csv('sex_averaged_df.csv')
-    race_data = pd.read_csv('race_averaged_df.csv')
-    overall_data = pd.read_csv('state_averaged_df.csv')
+    sex_data = pd.read_csv('data/sex_averaged_df.csv')
+    race_data = pd.read_csv('data/race_averaged_df.csv')
+    overall_data = pd.read_csv('data/state_averaged_df.csv')
 
-    df_prevalence = pd.read_csv('prevalence_df.csv')
+    df_prevalence = pd.read_csv('data/prevalence_df.csv')
     df_prevalence['Count'] = df_prevalence['Number (in thousands)'] * 1000
 
-    # Ensure LocationDesc and other necessary columns exist
     assert 'LocationDesc' in sex_data.columns, "LocationDesc not found in sex_data!"
     assert 'Class' in sex_data.columns, "Class column missing in sex_data!"
     assert 'Data_Value' in sex_data.columns, "Data_Value column missing in sex_data!"
     assert 'Stratification2' in sex_data.columns, "Stratification2 column missing in sex_data!"
 
-
-
-    # Create two columns for the selectors
     col1_select, col2_select = st.columns(2)
 
-    # Streamlit Selectbox for State 1 (left column)
     with col1_select:
         state_1 = st.selectbox('Select State 1:', sex_data['LocationDesc'].unique(), index=0)
 
-    # Streamlit Selectbox for State 2 (right column)
     with col2_select:
         state_2 = st.selectbox('Select State 2:', sex_data['LocationDesc'].unique(), index=1)
 
 
-
-    # Alzheimer's disease data for the selected states
     alz_state_1 = df_prevalence[df_prevalence['state'] == state_1]
     alz_state_2 = df_prevalence[df_prevalence['state'] == state_2]
 
     col1_prevalence, col2_prevalence = st.columns(2)
 
-    # Display Prevalence for State 1
+    # Prevalence for State 1
     with col1_prevalence:
         if not alz_state_1.empty:
             prevalence_1 = alz_state_1.iloc[0]['Percent']
@@ -50,7 +41,7 @@ def show_compare_states_page():
         else:
             st.write(f"No data available for {state_1}")
 
-    # Display Prevalence for State 2
+    # Prevalence for State 2
     with col2_prevalence:
         #st.markdown(f"#### {prevalence_2}%")
         if not alz_state_2.empty:
@@ -62,8 +53,7 @@ def show_compare_states_page():
             st.write(f"No data available for {state_2}")
 
     st.markdown(f"---")
-
-    # Create two columns in Streamlit for the charts
+  
     col1, col2 = st.columns(2)
 
     # Filter data based on the selected states
@@ -75,7 +65,6 @@ def show_compare_states_page():
     overall_data_1 = overall_data[overall_data['LocationDesc'] == state_1]
     overall_data_2 = overall_data[overall_data['LocationDesc'] == state_2]
 
-    # Function to create charts
     def create_plots():
 
         # Bar chart for overall comparison for State 1
@@ -152,7 +141,6 @@ def show_compare_states_page():
             title=f'Average % by Topic and Race for {state_2}'
         )
 
-        # Render charts in columns
 
         # State 1 Charts
         with col1:
@@ -170,7 +158,6 @@ def show_compare_states_page():
             st.markdown(f"---")
             st.altair_chart(bar_chart_race_2, use_container_width=True)
 
-    # Call the function to create plots
     create_plots()
 
 #show_compare_states_page()
