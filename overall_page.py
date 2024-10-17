@@ -3,16 +3,15 @@ from vega_datasets import data
 import pandas as pd
 import streamlit as st
 
-# Cache the data loading to avoid rerunning it on every interaction
 @st.cache_data
 def load_prevalence_data():
-    df = pd.read_csv('prevalence_df.csv')
+    df = pd.read_csv('data/prevalence_df.csv')
     df['Count'] = df['Number (in thousands)'] * 1000
     return df
 
 @st.cache_data
 def load_engagement_data():
-    df = pd.read_csv('averaged_4topics.csv')
+    df = pd.read_csv('data/averaged_4topics.csv')
     df.columns = df.columns.str.strip().str.replace(' ', '_')
     df['Data_Value'] = pd.to_numeric(df['Data_Value'], errors='coerce')
     
@@ -35,7 +34,6 @@ def load_engagement_data():
     
     return df_aggregated_region, df_aggregated_state
 
-# Load the data
 df_prevalence = load_prevalence_data()
 df_aggregated_region, df_aggregated_state = load_engagement_data()
 
@@ -46,16 +44,13 @@ def show_overall_page():
 
     states = alt.topo_feature(data.us_10m.url, feature='states')
 
-    # Create a selector for the states
     selector = alt.selection_point(fields=['state'], name='Select')
 
-    # Base map background
     background = alt.Chart(states).mark_geoshape(
         fill='lightgray',
         stroke='white'
     )
 
-    # Set up color scale based on prevalence data
     prevalence_scale = alt.Scale(domain=[df_prevalence['Percent'].min(), df_prevalence['Percent'].max()], scheme='oranges')
     prevalence_color = alt.Color(field="Percent", type="quantitative", scale=prevalence_scale, title="Prevalence (%)")
 
@@ -105,7 +100,6 @@ def show_overall_page():
         title="Top 10 States by Number of People"
     )
 
-    # Layout for map and top 10 bar chart
     st.markdown('<div class="centered-chart">', unsafe_allow_html=True)
     st.altair_chart(
         alt.hconcat(
@@ -166,6 +160,5 @@ def show_overall_page():
     st.altair_chart(alt.vconcat(grouped_bar, state_bar), use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Display the page
-show_overall_page()
+#show_overall_page()
 
