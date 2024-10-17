@@ -70,47 +70,47 @@ def show_compare_states_page():
         # Bar chart for overall comparison for State 1
         bar_chart_state_1 = alt.Chart(overall_data_1).mark_bar().encode(
             x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
-            y=alt.Y('Data_Value:Q', title='Average %'),
+            y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Class:N',
             tooltip=['Class', 'Data_Value']
         ).properties(
-            title=f'Average % by Topic for {state_1}'
+            title=f'Overall percentage of Elders with concerns for {state_1}'
         )
 
         # Bar chart for overall comparison for State 2
         bar_chart_state_2 = alt.Chart(overall_data_2).mark_bar().encode(
             x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
-            y=alt.Y('Data_Value:Q', title='Average %'),
+            y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Class:N',
             tooltip=['Class', 'Data_Value']
         ).properties(
-            title=f'Average % by Topic for {state_2}'
+            title=f'Overall percentage of Elders with concerns for {state_2}'
         )
 
         # Bar chart for Sex data comparison for State 1
         bar_chart_sex_1 = alt.Chart(sex_data_state_1).mark_bar(size=30).encode(
             x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
-            y=alt.Y('Data_Value:Q', title='Average %'),
+            y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Stratification2:N',
             tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
             stroke=None,
         ).properties(
-            title=f'Average % by Topic and Sex for {state_1}'
+            title=f'Percentage of Elders with Concerns by Sex for {state_1}'
         )
 
         # Bar chart for Sex data comparison for State 2
         bar_chart_sex_2 = alt.Chart(sex_data_state_2).mark_bar().encode(
             x=alt.X('Class:N', title='Topics', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
-            y=alt.Y('Data_Value:Q', title='Average %'),
+            y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
             color='Stratification2:N',
             tooltip=['Class', 'Stratification2', 'Data_Value']
         ).configure_view(
             stroke=None,
         ).properties(
-            title=f'Average % by Topic and Sex for {state_2}'
+            title=f'Percentage of Elders with Concerns by Sex for {state_2}'
         )
 
         # Bar chart for Race data comparison for State 1
@@ -124,7 +124,7 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
-            title=f'Average % by Topic and Race for {state_1}'
+            title=f'Percentage of Elders with Concerns by Race for {state_1}'
         )
 
         # Bar chart for Race data comparison for State 2
@@ -138,7 +138,7 @@ def show_compare_states_page():
         ).configure_view(
             stroke=None,
         ).properties(
-            title=f'Average % by Topic and Race for {state_2}'
+            title=f'Percentage of Elders with Concerns by Race for {state_2}'
         )
 
 
