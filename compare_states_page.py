@@ -4,6 +4,8 @@ import streamlit as st
 
 
 def show_compare_states_page():
+
+    st.title('Demographic Trends in Concerns and Behaviors in Different States')
                        
     sex_data = pd.read_csv('data/sex_averaged_df.csv')
     race_data = pd.read_csv('data/race_averaged_df.csv')
