@@ -43,10 +43,10 @@ def show_compare_topics_page():
             filtered_df = df[df['Class'] == category].dropna(subset=['Data_Value'])
 
             heatmap = alt.Chart(us_states).mark_geoshape().encode(
-                color=alt.Color('Data_Value:Q', title=f'Percentage of Elders with the Concern (%)', scale=alt.Scale(scheme='blues')),
+                color=alt.Color('Data_Value:Q', title=f'Percentage of Elders(%)', scale=alt.Scale(scheme='blues')),
                 tooltip=[alt.Tooltip('LocationDesc:N', title='State'),
                          alt.Tooltip('Class:N', title='Type of Concerns'),
-                         alt.Tooltip('Data_Value:Q', title='Percentage of Elders with the Concern (%)', format='.1f')]
+                         alt.Tooltip('Data_Value:Q', title='Percentage of Elders(%)', format='.1f')]
             ).transform_lookup(
                 lookup='id',
                 from_=alt.LookupData(filtered_df, 'state_id', ['LocationDesc', 'Data_Value', 'Class'])
