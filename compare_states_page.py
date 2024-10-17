@@ -90,7 +90,7 @@ def show_compare_states_page():
         )
 
         # Bar chart for Sex data comparison for State 1
-        bar_chart_sex_1 = alt.Chart(sex_data_state_1).mark_bar(size=30).encode(
+        bar_chart_sex_1 = alt.Chart(sex_data_state_1).mark_bar().encode(
             x=alt.X('Class:N', title='Concern Types', axis=alt.Axis(labelLimit=200, labelAngle=315, labelFontSize=12, labelOverlap=False)),
             xOffset='Stratification2',
             y=alt.Y('Data_Value:Q', title='Percentage of Elders %'),
